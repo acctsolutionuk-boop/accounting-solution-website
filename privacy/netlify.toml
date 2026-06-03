@@ -1,0 +1,220 @@
+[[redirects]]
+  from = "http://acctsolution.co.uk/*"
+  to = "https://acctsolution.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.acctsolution.co.uk/*"
+  to = "https://acctsolution.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.acctsolution.co.uk/*"
+  to = "https://acctsolution.co.uk/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# ============================================
+# GSC CLEANUP — Old WordPress/previous site URLs
+# Added May 2026
+# ============================================
+
+# www redirects (HTTPS + HTTP)
+[[redirects]]
+  from = "https://www.acctsolution.co.uk/*"
+  to = "https://acctsolution.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.acctsolution.co.uk/*"
+  to = "https://acctsolution.co.uk/:splat"
+  status = 301
+  force = true
+
+# HTTP → HTTPS catch-all
+[[redirects]]
+  from = "http://acctsolution.co.uk/*"
+  to = "https://acctsolution.co.uk/:splat"
+  status = 301
+  force = true
+
+# Old WordPress page slugs
+[[redirects]]
+  from = "/aboutus"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/aboutus/privacy-policy/"
+  to = "/privacy/"
+  status = 301
+
+[[redirects]]
+  from = "/author/duncan/"
+  to = "/about/"
+  status = 301
+
+# Old blog posts → blog index
+[[redirects]]
+  from = "/why-is-it-important-to-hire-a-good-accountant/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/what-does-an-accountant-account-for/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/importance-of-payroll-services/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/the-one-minute-guide-to-tax-credits/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/are-you-paying-too-much-tax/"
+  to = "/blog/"
+  status = 301
+
+# WordPress RSS feeds (noindex) → blog
+[[redirects]]
+  from = "/are-you-paying-too-much-tax/feed/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/the-one-minute-guide-to-tax-credits/feed/"
+  to = "/blog/"
+  status = 301
+
+# WordPress tag/category URLs
+[[redirects]]
+  from = "/blog/?tag=tax"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/?tag=bookeeping"
+  to = "/blog/"
+  status = 301
+
+# Divi/Elementor/WordPress theme leftovers
+[[redirects]]
+  from = "/wp-content/uploads/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/wp-content/themes/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/?et_core_page_resource*"
+  to = "/"
+  status = 301
+# Additional 404 fixes from GSC — June 2026
+[[redirects]]
+from = "/saf/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/any-mistakes-in-bookkeeping-can-be-quite-costly-for-acompany/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/payroll/"
+to = "/services/"
+status = 301
+
+[[redirects]]
+from = "/what-distinguishes-professional-accountants-from-thecrowd/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/category/uncategorized/page/2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/how-accounting-solutions-can-help-you-with-your-finances/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/wp-admin/*"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/why-is-it-important-to-hire-a-good-accountant/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/what-distinguishes-professional-accountants-from-thecrowd/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/the-nightmare-of-tax-codes-why-you-might-beoverpaying-hmrc/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/vat-101/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/?ref=tomba.io"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/?elementor_library=services"
+to = "/services/"
+status = 301
+
+[[redirects]]
+from = "/how-to-find-the-right-accountant/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/good-bookkeeping-is-one-of-the-keys-to-success-in-anybusiness/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/are-you-looking-for-an-accountant-who-specializes-in-yoursize-of-business/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/wp-includes/js/*"
+to = "/"
+status = 301
