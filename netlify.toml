@@ -128,3 +128,93 @@
   from = "/?et_core_page_resource*"
   to = "/"
   status = 301
+# Additional 404 fixes from GSC — June 2026
+[[redirects]]
+from = "/saf/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/any-mistakes-in-bookkeeping-can-be-quite-costly-for-acompany/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/payroll/"
+to = "/services/"
+status = 301
+
+[[redirects]]
+from = "/what-distinguishes-professional-accountants-from-thecrowd/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/category/uncategorized/page/2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/how-accounting-solutions-can-help-you-with-your-finances/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/wp-admin/*"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/why-is-it-important-to-hire-a-good-accountant/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/what-distinguishes-professional-accountants-from-thecrowd/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/the-nightmare-of-tax-codes-why-you-might-beoverpaying-hmrc/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/vat-101/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/?ref=tomba.io"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/?elementor_library=services"
+to = "/services/"
+status = 301
+
+[[redirects]]
+from = "/how-to-find-the-right-accountant/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/good-bookkeeping-is-one-of-the-keys-to-success-in-anybusiness/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/are-you-looking-for-an-accountant-who-specializes-in-yoursize-of-business/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/wp-includes/js/*"
+to = "/"
+status = 301
