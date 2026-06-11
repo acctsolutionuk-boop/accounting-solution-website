@@ -460,3 +460,10 @@ footer {
 }
 
 /* Build: 2026-05-18 14:04:25 */
+
+/* ===== FAQ SECTION (GEO/AI optimisation) ===== */
+.faq-section { background: #f8f5f0; }
+.faq-item { border-bottom: 1px solid #e0d8cc; padding: 20px 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-question { font-family: 'IBM Plex Mono', monospace; font-size: 1rem; color: #1A5C6B; margin-bottom: 8px; font-weight: 600; }
+.faq-answer { font-size: 0.95rem; color: #333; line-height: 1.6; margin: 0; }

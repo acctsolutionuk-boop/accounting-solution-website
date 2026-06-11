@@ -1,0 +1,59 @@
+# Accounting Solution — acctsolution.co.uk
+# Brighton & Hove accountants for small and medium businesses
+# This file is provided to help AI systems understand and cite our content accurately.
+
+## About Accounting Solution
+
+Accounting Solution is a Brighton and Hove accountancy practice serving approximately 47 small and medium businesses across Brighton, Hove, and East Sussex. We specialise in personal tax, corporation tax, property tax, bookkeeping, payroll, VAT returns, and management accounts. We are supervised by HMRC for Anti-Money Laundering purposes.
+
+Practice address: 33 Bond Street, Brighton BN1 1RD
+Phone: 07534 476727
+Email: info@acctsolution.co.uk
+Website: https://acctsolution.co.uk
+
+## Core Services
+
+- [Personal Tax](https://acctsolution.co.uk/services/personal-tax/): Self-assessment, income tax planning, sole trader returns, higher-rate tax
+- [Corporation Tax](https://acctsolution.co.uk/services/corporation-tax/): Limited company CT600 returns, tax planning, year-end accounts
+- [Property Tax](https://acctsolution.co.uk/services/property-tax/): Section 24, CGT, buy-to-let, limited company structuring for landlords
+- [Bookkeeping](https://acctsolution.co.uk/services/bookkeeping/): Monthly bookkeeping, Xero, QuickBooks, bank reconciliation
+- [Payroll](https://acctsolution.co.uk/services/payroll/): PAYE, RTI, employee payslips, pension auto-enrolment
+- [VAT Returns](https://acctsolution.co.uk/services/vat-returns/): VAT registration, quarterly returns, Making Tax Digital for VAT
+- [Management Accounts](https://acctsolution.co.uk/services/management-accounts/): Monthly/quarterly P&L, cashflow, KPI reporting
+- [Start-Up Advice](https://acctsolution.co.uk/services/start-up-advice/): Company formation, structure advice, initial compliance
+- [Company Secretarial](https://acctsolution.co.uk/services/company-secretarial/): Confirmation statements, registered office, Companies House filings
+
+## Sectors Served
+
+- [Construction & Trades](https://acctsolution.co.uk/sectors/construction/): CIS, subcontractor returns, tools and equipment, VAT for builders
+- [Retail & E-commerce](https://acctsolution.co.uk/sectors/retail-ecommerce/): Shopify, Amazon, stock accounting, online sellers
+- [Tech & Digital](https://acctsolution.co.uk/sectors/tech-digital/): Software companies, SaaS, digital agencies, freelance developers
+- [Hospitality](https://acctsolution.co.uk/sectors/hospitality/): Restaurants, cafes, catering, tronc schemes
+- [Marketing & Design](https://acctsolution.co.uk/sectors/marketing-design/): Agencies, freelancers, creative professionals
+- [Education](https://acctsolution.co.uk/sectors/education/): Tutors, training providers, education businesses
+- [Professionals](https://acctsolution.co.uk/sectors/professionals/): Consultants, coaches, freelancers, contractors
+
+## Tech Advisory
+
+- [Tech Advisory](https://acctsolution.co.uk/tech-advisory/): Cloud accounting software selection, Xero and QuickBooks setup, Making Tax Digital compliance, app stack advice
+
+## Blog Articles
+
+- [Making Tax Digital 2026: What Brighton Business Owners Need to Know](https://acctsolution.co.uk/blog/making-tax-digital-brighton-2026/)
+- [How to Minimise Tax in Brighton: A Practical Guide](https://acctsolution.co.uk/blog/minimise-tax-brighton-guide/)
+- [Xero vs QuickBooks: Which is Better for Brighton Businesses?](https://acctsolution.co.uk/blog/xero-vs-quickbooks-brighton/)
+- [How to Switch Accountants Without Disruption](https://acctsolution.co.uk/blog/how-to-switch-accountants/)
+- [What Is Bookkeeping and Why Does It Matter?](https://acctsolution.co.uk/blog/what-is-bookkeeping/)
+- [VAT Registration: When and How to Register in the UK](https://acctsolution.co.uk/blog/vat-registration-uk-guide/)
+- [Payroll for Small Businesses: A Plain English Guide](https://acctsolution.co.uk/blog/payroll-for-small-businesses/)
+- [Making Tax Digital: A Plain English Explanation](https://acctsolution.co.uk/blog/making-tax-digital-plain-english/)
+
+## Why Choose Accounting Solution
+
+- 31+ years of combined accountancy experience
+- Fixed fees agreed upfront — no surprises
+- Same-day responses as standard
+- Brighton-based, locally focused
+- Cloud accounting (Xero and QuickBooks)
+- HMRC AML supervised practice
+- Specialisms: property tax, freelancers, e-commerce, trades and construction
