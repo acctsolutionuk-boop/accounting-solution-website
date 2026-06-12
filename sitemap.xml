@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core pages -->
-  <url><loc>https://acctsolution.co.uk/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://acctsolution.co.uk/tech-advisory/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/about/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/contact/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://acctsolution.co.uk/</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://acctsolution.co.uk/tech-advisory/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/about/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/contact/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://acctsolution.co.uk/pricing/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <!-- Service pages -->
-  <url><loc>https://acctsolution.co.uk/services/personal-tax/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/corporation-tax/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/vat-returns/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/bookkeeping/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/payroll/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/property-tax/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/management-accounts/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/start-up-advice/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/company-secretarial/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/personal-tax/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/corporation-tax/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/vat-returns/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/bookkeeping/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/payroll/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/property-tax/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/management-accounts/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/start-up-advice/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/company-secretarial/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Tech Advisory -->
+  <url><loc>https://acctsolution.co.uk/tech-advisory/software-mtd/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <!-- Sector pages -->
-  <url><loc>https://acctsolution.co.uk/sectors/construction/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/marketing-design/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/retail-ecommerce/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/tech-digital/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/hospitality/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/education/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/sectors/professionals/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/construction/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/property-landlord/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/marketing-design/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/retail-ecommerce/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/tech-digital/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/hospitality/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/education/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/sectors/professionals/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- Blog articles -->
-  <url><loc>https://acctsolution.co.uk/blog/making-tax-digital-brighton-2026/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/minimise-tax-brighton-guide/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/xero-vs-quickbooks-brighton/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/how-to-switch-accountants/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/what-is-bookkeeping/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/vat-registration-uk-guide/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/payroll-for-small-businesses/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/making-tax-digital-plain-english/</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/making-tax-digital-brighton-2026/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/minimise-tax-brighton-guide/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/xero-vs-quickbooks-brighton/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/how-to-switch-accountants/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/what-is-bookkeeping/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/vat-registration-uk-guide/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/payroll-for-small-businesses/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/making-tax-digital-plain-english/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <!-- Utility -->
   <url><loc>https://acctsolution.co.uk/privacy/</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://acctsolution.co.uk/terms/</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
