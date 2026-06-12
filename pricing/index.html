@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Accounting Solution | Brighton &amp; Hove Accountants</title>
+<meta name="description" content="Transparent monthly pricing from Accounting Solution in Brighton &amp; Hove. Fixed fees for sole traders, freelancers, landlords and limited companies — see exactly what's included.">
+<link rel="canonical" href="https://acctsolution.co.uk/pricing/">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Accounting services",
+  "provider": {
+    "@type": "AccountingService",
+    "name": "Accounting Solution",
+    "url": "https://acctsolution.co.uk",
+    "telephone": "+447534476727",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brighton",
+      "postalCode": "BN1",
+      "addressCountry": "GB"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Accounting packages",
+    "itemListElement": [
+      {"@type":"Offer","name":"Self-employed accounting (sole trader, freelancer, contractor)","priceSpecification":{"@type":"UnitPriceSpecification","price":"30","priceCurrency":"GBP","unitText":"MONTH","minPrice":"30"}},
+      {"@type":"Offer","name":"Self-employed with MTD for Income Tax (income over £50,000/year)","priceSpecification":{"@type":"UnitPriceSpecification","price":"75","priceCurrency":"GBP","unitText":"MONTH","minPrice":"75"}},
+      {"@type":"Offer","name":"Limited company accounts (small, under £90k turnover)","priceSpecification":{"@type":"UnitPriceSpecification","price":"85","priceCurrency":"GBP","unitText":"MONTH","minPrice":"85"}},
+      {"@type":"Offer","name":"Limited company accounts (medium, £90k–£200k turnover)","priceSpecification":{"@type":"UnitPriceSpecification","price":"120","priceCurrency":"GBP","unitText":"MONTH","minPrice":"120"}},
+      {"@type":"Offer","name":"Landlord / property self-assessment","priceSpecification":{"@type":"UnitPriceSpecification","price":"40","priceCurrency":"GBP","unitText":"MONTH","minPrice":"40"}},
+      {"@type":"Offer","name":"Landlord / property self-assessment with MTD (income over £50,000/year)","priceSpecification":{"@type":"UnitPriceSpecification","price":"75","priceCurrency":"GBP","unitText":"MONTH","minPrice":"75"}},
+      {"@type":"Offer","name":"Self-assessment tax return (standalone)","priceSpecification":{"@type":"UnitPriceSpecification","price":"395","priceCurrency":"GBP","unitText":"YEAR","minPrice":"395"}}
+    ]
+  }
+}
+</script>
+<style>
+/* Pricing-specific styles — supplements /css/style.css */
+:root {
+  --gold: #C9973A;
+  --gold-pale: #FDF6E3;
+  --gold-light: #E0B060;
+  --teal: #1A5C6B;
+  --teal-light: #2A7A8C;
+  --teal-pale: #F0F7F9;
+  --charcoal: #212121;
+  --text-mid: #555555;
+  --border: #DDDDDD;
+}
+
+/* PRICING HERO */
+.pricing-hero {
+  background: var(--charcoal);
+  padding: 7rem 0 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-hero::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 4px; height: 100%;
+  background: var(--gold);
+}
+.pricing-hero .container { position: relative; z-index: 1; }
+.pricing-hero .eyebrow {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(201,151,58,0.8);
+  border: 1px solid rgba(201,151,58,0.25);
+  padding: 0.35rem 0.9rem;
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.pricing-hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.85rem;
+}
+.pricing-hero h1 em { font-style: italic; color: var(--gold); }
+.pricing-hero p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+.pricing-hero .badge {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.38rem 1.1rem;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* CALC SECTION */
+.calc-section {
+  background: #fff;
+  padding: 3rem 0 1.5rem;
+}
+.calc-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.step-lbl {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 0.45rem;
+}
+.step-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 1.3rem;
+}
+
+/* TYPE CARDS */
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+.type-card {
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 1.1rem 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  transition: border-color 0.15s, background 0.15s;
+}
+.type-card:hover { border-color: var(--teal); }
+.type-card.active {
+  border-color: var(--teal);
+  background: var(--teal-pale);
+  box-shadow: 0 0 0 1px var(--teal);
+}
+.type-card .tc-icon { font-size: 1.5rem; margin-bottom: 0.45rem; }
+.type-card .tc-name { font-weight: 700; font-size: 0.85rem; margin-bottom: 0.2rem; color: var(--charcoal); }
+.type-card .tc-sub { font-size: 0.7rem; color: var(--text-mid); }
+
+/* ADDON CARDS */
+.addon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+.addon-card {
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.addon-card.active {
+  border-color: var(--teal);
+  background: var(--teal-pale);
+}
+.addon-card.hidden { display: none; }
+.atoggle {
+  flex-shrink: 0;
+  width: 38px; height: 20px;
+  border-radius: 12px;
+  background: var(--border);
+  position: relative;
+  margin-top: 2px;
+  pointer-events: none;
+}
+.atoggle::after {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  transition: left 0.15s;
+}
+.atoggle.on { background: var(--teal); }
+.atoggle.on::after { left: 20px; }
+.addon-name { font-weight: 700; font-size: 0.85rem; margin-bottom: 0.2rem; color: var(--charcoal); }
+.addon-desc { font-size: 0.73rem; color: var(--text-mid); line-height: 1.5; }
+.no-addons-msg { font-size: 0.84rem; color: var(--text-mid); font-style: italic; margin-bottom: 2.5rem; }
+
+/* RESULT BOX */
+.result-box {
+  background: var(--charcoal);
+  border-radius: 8px;
+  padding: 2.2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.result-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gold);
+}
+.result-label {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 0.5rem;
+}
+.result-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.5rem, 7vw, 3.8rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.result-price span { font-family: 'IBM Plex Mono', monospace; font-size: 1rem; font-weight: 400; color: rgba(255,255,255,0.45); }
+.result-note { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-top: 0.6rem; line-height: 1.55; }
+.result-cta {
+  display: inline-block;
+  margin-top: 1.4rem;
+  padding: 0.85rem 2rem;
+  background: var(--gold);
+  color: var(--charcoal);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: background 0.2s;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.result-cta:hover { background: var(--gold-light); }
+
+/* INCLUDED BOX */
+.included-box {
+  background: var(--teal-pale);
+  border: 1px solid rgba(26,92,107,0.15);
+  border-radius: 8px;
+  padding: 1.8rem;
+  margin-bottom: 3rem;
+}
+.included-box h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+.tax-review-highlight {
+  border: 1.5px solid var(--gold);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  background: #fff;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--charcoal);
+}
+.tax-review-highlight strong { color: var(--gold); }
+.included-ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.65rem;
+}
+.included-ul li {
+  font-size: 0.83rem;
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+.included-ul li::before {
+  content: '\2713';
+  color: var(--teal);
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 18px; height: 18px;
+  border: 1.5px solid var(--teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.62rem;
+  margin-top: 1px;
+}
+
+/* FAQ */
+.faq-section { background: #fff; padding: 0 0 4rem; }
+.faq-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.faq-inner h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 1.2rem;
+}
+.faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+.faq-item h4 { font-size: 0.9rem; font-weight: 700; color: var(--charcoal); margin-bottom: 0.45rem; }
+.faq-item p { font-size: 0.83rem; color: var(--text-mid); line-height: 1.75; }
+
+/* CTA BAND */
+.pricing-cta-band {
+  background: var(--teal);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+.pricing-cta-band h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+.pricing-cta-band p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1.4rem;
+}
+.pricing-cta-band a {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  background: var(--gold);
+  color: var(--charcoal);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  font-family: 'IBM Plex Mono', monospace;
+  transition: background 0.2s;
+}
+.pricing-cta-band a:hover { background: var(--gold-light); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Accounting<span class="teal">Solution</span></a>
+      <div class="nav-links">
+        <a href="/services/">Services</a>
+        <a href="/sectors/">Sectors</a>
+        <a href="/tech-advisory/">Tech Advisory</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/pricing/" class="active" style="color:var(--teal,#1A5C6B);font-weight:600;">Pricing</a>
+        <a href="/contact/" class="nav-cta">Get in Touch</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="/services/">Services</a>
+  <a href="/sectors/">Sectors</a>
+  <a href="/tech-advisory/">Tech Advisory</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <a href="/pricing/">Pricing</a>
+  <a href="/contact/">Get in Touch</a>
+</div>
+
+<div class="pricing-hero">
+  <div class="container">
+    <div class="eyebrow">Pricing</div>
+    <h1>Fixed fees.<br><em>No surprises.</em></h1>
+    <p>Tell us a bit about yourself and we&rsquo;ll show you what&rsquo;s included &mdash; fixed monthly fee, no hidden extras.</p>
+    <span class="badge">Free initial consultation &middot; No obligation</span>
+  </div>
+</div>
+
+<div class="calc-section">
+  <div class="calc-inner">
+
+    <div class="step">
+      <div class="step-lbl">Step 1</div>
+      <div class="step-heading">Who are you?</div>
+      <div class="type-grid" id="type-grid">
+        <div class="type-card active" data-type="self">
+          <div class="tc-icon">&#128100;</div>
+          <div class="tc-name">Self-employed</div>
+          <div class="tc-sub">Sole trader, freelancer or contractor</div>
+        </div>
+        <div class="type-card" data-type="ltdsmall">
+          <div class="tc-icon">&#127962;</div>
+          <div class="tc-name">Limited company</div>
+          <div class="tc-sub">Under &pound;90k turnover</div>
+        </div>
+        <div class="type-card" data-type="ltdmed">
+          <div class="tc-icon">&#127962;</div>
+          <div class="tc-name">Limited company</div>
+          <div class="tc-sub">&pound;90k&ndash;&pound;200k turnover</div>
+        </div>
+        <div class="type-card" data-type="landlord">
+          <div class="tc-icon">&#127968;</div>
+          <div class="tc-name">Landlord</div>
+          <div class="tc-sub">Property self-assessment</div>
+        </div>
+        <div class="type-card" data-type="sa">
+          <div class="tc-icon">&#128196;</div>
+          <div class="tc-name">Self-assessment only</div>
+          <div class="tc-sub">Personal tax return (SA100)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-lbl">Step 2</div>
+      <div class="step-heading" id="addons-heading">Anything else you need?</div>
+      <div class="addon-grid" id="addon-grid">
+        <div class="addon-card" id="mtd-card">
+          <div class="atoggle"></div>
+          <div>
+            <div class="addon-name" id="mtd-name">Income over &pound;50,000/year</div>
+            <div class="addon-desc">MTD for Income Tax &mdash; 4 quarterly digital submissions to HMRC (+ &pound;95 one-off setup, year 1)</div>
+          </div>
+        </div>
+        <div class="addon-card" id="payroll-card">
+          <div class="atoggle"></div>
+          <div>
+            <div class="addon-name">Payroll</div>
+            <div class="addon-desc">Up to 5 employees &mdash; payslips, RTI submissions, pension auto-enrolment</div>
+          </div>
+        </div>
+        <div class="addon-card hidden" id="vat-card">
+          <div class="atoggle on" style="pointer-events:none;"></div>
+          <div>
+            <div class="addon-name">VAT returns</div>
+            <div class="addon-desc">Included automatically for turnover above &pound;90k &mdash; full MTD compliance</div>
+          </div>
+        </div>
+      </div>
+      <p class="no-addons-msg" id="no-addons" style="display:none;">No add-ons needed for this package &mdash; everything below is included as standard.</p>
+    </div>
+
+    <div class="result-box">
+      <div class="result-label">Your estimated package</div>
+      <div class="result-price" id="price-display"></div>
+      <div class="result-note" id="extra-note" style="display:none;"></div>
+      <div class="result-note">Final price confirmed at your free consultation &mdash; no obligation</div>
+      <a href="/contact/" class="result-cta">Book your free consultation</a>
+    </div>
+
+    <div class="included-box">
+      <h3>What&rsquo;s included &mdash; every package</h3>
+      <div class="tax-review-highlight">
+        <strong>Annual tax planning review</strong> &mdash; this is where we make sure you&rsquo;re not leaving money on the table. Changes to tax legislation happen every year, and this review alone has saved clients thousands by catching reliefs and allowances they didn&rsquo;t know they qualified for.
+      </div>
+      <ul class="included-ul" id="included-list"></ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="faq-section">
+  <div class="faq-inner">
+    <h2>Common questions</h2>
+    <div class="faq-item">
+      <h4>Are these prices fixed, or will I get a final quote?</h4>
+      <p>These are the typical prices for clients in each category &mdash; not a low introductory rate. They&rsquo;re shown as &ldquo;from&rdquo; figures because every business is a little different, so we&rsquo;ll confirm your exact monthly fee at a free, no-obligation consultation &mdash; with no surprises once you&rsquo;re a client.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do I need to use specific software?</h4>
+      <p>No. We provide our own MTD-compliant software as standard, included in every package. If you already use Xero, QuickBooks, FreeAgent or similar, we&rsquo;re happy to work with whatever you&rsquo;ve got.</p>
+    </div>
+    <div class="faq-item">
+      <h4>What is MTD for Income Tax and do I need it?</h4>
+      <p>Making Tax Digital for Income Tax became mandatory from April 2026 for self-employed people and landlords earning over &pound;50,000/year (dropping to &pound;30,000 from April 2027). If that&rsquo;s you, it means quarterly digital submissions to HMRC instead of one annual return &mdash; we handle the whole process. It doesn&rsquo;t apply to limited companies or to standalone personal tax returns.</p>
+    </div>
+    <div class="faq-item">
+      <h4>I&rsquo;m switching from another accountant &mdash; is that complicated?</h4>
+      <p>Not at all. We contact your previous accountant, transfer all your records, and there&rsquo;s no gap in your accounting. Usually complete within two weeks.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pricing-cta-band">
+  <div class="container">
+    <h2>Ready to get started?</h2>
+    <p>Free initial consultation &mdash; no commitment, no jargon, no hard sell.</p>
+    <a href="/contact/">Book your free consultation &rarr;</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Accounting<span>Solution</span></div>
+        <p>Brighton &amp; Hove accountants for small and medium businesses. Personal tax, corporation tax, bookkeeping, payroll, VAT, and more.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services/personal-tax/">Personal Tax</a>
+        <a href="/services/corporation-tax/">Corporation Tax</a>
+        <a href="/services/vat-returns/">VAT Returns</a>
+        <a href="/services/bookkeeping/">Bookkeeping</a>
+        <a href="/services/payroll/">Payroll</a>
+        <a href="/services/property-tax/">Property Tax</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About Us</a>
+        <a href="/sectors/">Sectors</a>
+        <a href="/tech-advisory/">Tech Advisory</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:07534476727">07534 476727</a>
+        <a href="mailto:info@acctsolution.co.uk">info@acctsolution.co.uk</a>
+        <a href="https://acctsolution.co.uk">acctsolution.co.uk</a>
+        <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:8px;">Brighton &amp; Hove, East Sussex</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Accounting Solution Sussex Ltd. All rights reserved.</p>
+      <div style="display:flex;gap:20px;">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="chat-float">
+  <a href="https://wa.me/447534476727" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+<script src="/js/main.js"></script>
+
+<script>
+const SELF_LIST = [
+  "Personal tax return (SA100) preparation and filing",
+  "Bookkeeping via MTD-ready software (Xero/QuickBooks also supported)",
+  "Unlimited email &amp; phone support, same-day response (fair use policy)",
+  "HMRC correspondence handled on your behalf",
+  "Reminders for every key deadline &mdash; nothing missed",
+  "Acting as your tax agent"
+];
+const LTD_LIST = [
+  "Annual accounts &amp; corporation tax return preparation and filing",
+  "Bookkeeping via MTD-ready software (Xero/QuickBooks also supported)",
+  "Unlimited email &amp; phone support, same-day response (fair use policy)",
+  "HMRC correspondence handled on your behalf",
+  "Reminders for every key deadline &mdash; nothing missed",
+  "Company secretarial duties &mdash; confirmation statement &amp; registered office",
+  "Acting as your tax agent"
+];
+
+const TYPES = {
+  self:     { base: 30,  mtdPrice: 75,  payroll: 15, list: SELF_LIST },
+  ltdsmall: { base: 85,  payroll: 15,   list: LTD_LIST },
+  ltdmed:   { base: 120, payrollAdd: 20, vat: true, list: LTD_LIST },
+  landlord: { base: 40,  mtdPrice: 75,  list: SELF_LIST },
+  sa:       { annual: 395, list: SELF_LIST }
+};
+
+const typeCards    = document.querySelectorAll('.type-card');
+const mtdCard      = document.getElementById('mtd-card');
+const payrollCard  = document.getElementById('payroll-card');
+const vatCard      = document.getElementById('vat-card');
+const noAddons     = document.getElementById('no-addons');
+const priceDisplay = document.getElementById('price-display');
+const extraNote    = document.getElementById('extra-note');
+const includedList = document.getElementById('included-list');
+
+let currentType = 'self';
+let mtdOn = false;
+let payrollOn = false;
+
+function render(){
+  const cfg = TYPES[currentType];
+  mtdOn = false; payrollOn = false;
+  mtdCard.classList.remove('active'); payrollCard.classList.remove('active');
+  mtdCard.querySelector('.atoggle').classList.remove('on');
+  payrollCard.querySelector('.atoggle').classList.remove('on');
+  mtdCard.classList.toggle('hidden', !cfg.mtdPrice);
+  payrollCard.classList.toggle('hidden', !(cfg.payroll || cfg.payrollAdd));
+  vatCard.classList.toggle('hidden', !cfg.vat);
+  const anyAddon = cfg.mtdPrice || cfg.payroll || cfg.payrollAdd || cfg.vat;
+  noAddons.style.display = anyAddon ? 'none' : 'block';
+  includedList.innerHTML = cfg.list.map(i => `<li>${i}</li>`).join('');
+  updatePrice();
+}
+
+function updatePrice(){
+  const cfg = TYPES[currentType];
+  if(cfg.annual){
+    priceDisplay.innerHTML = `from &pound;${cfg.annual}<span>/year</span>`;
+    extraNote.style.display = 'block';
+    extraNote.textContent = `(approx. £${Math.round(cfg.annual/12)}/month) — MTD does not apply to standalone self-assessment`;
+    return;
+  }
+  let total = cfg.base;
+  let notes = [];
+  if(cfg.mtdPrice && mtdOn){ total = cfg.mtdPrice; notes.push('Includes MTD for Income Tax (4 quarterly submissions + £95 one-off setup, year 1)'); }
+  if(cfg.payroll && payrollOn) total += cfg.payroll;
+  if(cfg.payrollAdd && payrollOn) total += cfg.payrollAdd;
+  if(cfg.vat) notes.push('VAT returns included automatically at this turnover level');
+  priceDisplay.innerHTML = `from &pound;${total}<span>/month</span>`;
+  if(notes.length){ extraNote.style.display='block'; extraNote.textContent=notes.join(' — '); }
+  else { extraNote.style.display='none'; }
+}
+
+typeCards.forEach(card => card.addEventListener('click', () => {
+  typeCards.forEach(c => c.classList.remove('active'));
+  card.classList.add('active');
+  currentType = card.dataset.type;
+  render();
+}));
+
+[mtdCard, payrollCard].forEach(card => {
+  card.addEventListener('click', () => {
+    const toggle = card.querySelector('.atoggle');
+    const isOn = toggle.classList.toggle('on');
+    card.classList.toggle('active', isOn);
+    if(card === mtdCard) mtdOn = isOn;
+    if(card === payrollCard) payrollOn = isOn;
+    updatePrice();
+  });
+});
+
+render();
+</script>
+</body>
+</html>
