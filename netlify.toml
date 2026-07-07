@@ -1,21 +1,3 @@
-[[redirects]]
-  from = "http://acctsolution.co.uk/*"
-  to = "https://acctsolution.co.uk/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.acctsolution.co.uk/*"
-  to = "https://acctsolution.co.uk/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.acctsolution.co.uk/*"
-  to = "https://acctsolution.co.uk/:splat"
-  status = 301
-  force = true
-
 # Force index.html to clean root
 [[redirects]]
   from = "/index.html"
