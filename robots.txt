@@ -49,3 +49,4 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://acctsolution.co.uk/sitemap.xml
+Sitemap: https://acctsolution.co.uk/llms.txt
