@@ -208,3 +208,53 @@
   from = "/wp-includes/js/*"
   to = "/"
   status = 301
+
+# GSC CLEANUP - remaining old WordPress URLs (added 4 Sept 2026)
+[[redirects]]
+from = "/ourclients/"
+to = "/sectors/"
+status = 301
+[[redirects]]
+from = "/aboutus/terms/"
+to = "/terms/"
+status = 301
+[[redirects]]
+from = "/property-tax-consultation/"
+to = "/services/property-tax/"
+status = 301
+[[redirects]]
+from = "/bookkeeping-services/"
+to = "/services/bookkeeping/"
+status = 301
+[[redirects]]
+from = "/a-professional-bookkeeper/"
+to = "/blog/what-is-bookkeeping/"
+status = 301
+[[redirects]]
+from = "/does-it-pay-to-hire-a-chartered-accountant-in-england/"
+to = "/blog/how-to-switch-accountants/"
+status = 301
+[[redirects]]
+from = "/tax-saving-tips/"
+to = "/blog/minimise-tax-brighton-guide/"
+status = 301
+[[redirects]]
+from = "/what-does-an-accountant-usually-do/"
+to = "/blog/"
+status = 301
+[[redirects]]
+from = "/why-should-you-hire-a-tax-accountant/"
+to = "/blog/"
+status = 301
+[[redirects]]
+from = "/sitemap_index.xml"
+to = "/sitemap.xml"
+status = 301
+[[redirects]]
+from = "/post-sitemap.xml"
+to = "/sitemap.xml"
+status = 301
+[[redirects]]
+from = "/page-sitemap.xml"
+to = "/sitemap.xml"
+status = 301
