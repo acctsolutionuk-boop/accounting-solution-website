@@ -258,3 +258,14 @@ status = 301
 from = "/page-sitemap.xml"
 to = "/sitemap.xml"
 status = 301
+[[redirects]]
+  from = "/blog/mtd-landlords-brighton/"
+  to = "https://accountantsbrighton.co.uk/mtd-landlords-brighton"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/mtd-sole-traders-brighton/"
+  to = "https://accountantsbrighton.co.uk/mtd-sole-traders-brighton"
+  status = 301
+  force = true
