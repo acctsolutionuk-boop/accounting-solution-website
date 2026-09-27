@@ -1,0 +1,18 @@
+# Website repo only - keep documents, data, backups and scratch files out.
+# Everything committed here is published to the public website by Netlify.
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.backup
+*.bak
+*.lnk
+*.py
+*.log
+*.tmp
+~$*
+Thumbs.db
+.DS_Store
