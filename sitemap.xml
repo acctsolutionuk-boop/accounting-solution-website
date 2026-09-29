@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core pages -->
-  <url><loc>https://acctsolution.co.uk/</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://acctsolution.co.uk/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://acctsolution.co.uk/services/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://acctsolution.co.uk/tech-advisory/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/tech-advisory/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://acctsolution.co.uk/sectors/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://acctsolution.co.uk/about/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://acctsolution.co.uk/contact/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://acctsolution.co.uk/pricing/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <!-- Service pages -->
-  <url><loc>https://acctsolution.co.uk/services/personal-tax/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/corporation-tax/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/vat-returns/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/bookkeeping/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/payroll/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/personal-tax/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/corporation-tax/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/vat-returns/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/bookkeeping/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/payroll/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://acctsolution.co.uk/services/property-tax/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://acctsolution.co.uk/services/management-accounts/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://acctsolution.co.uk/services/start-up-advice/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://acctsolution.co.uk/services/start-up-advice/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://acctsolution.co.uk/services/company-secretarial/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- Tech Advisory -->
   <url><loc>https://acctsolution.co.uk/tech-advisory/software-mtd/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -40,18 +40,18 @@
   <url><loc>https://acctsolution.co.uk/blog/payroll-for-small-businesses/</loc><lastmod>2026-07-07</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://acctsolution.co.uk/blog/making-tax-digital-plain-english/</loc><lastmod>2026-07-07</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <!-- Utility -->
-  <url><loc>https://acctsolution.co.uk/privacy/</loc><lastmod>2026-07-07</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://acctsolution.co.uk/privacy/</loc><lastmod>2026-09-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://acctsolution.co.uk/terms/</loc><lastmod>2026-07-07</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://acctsolution.co.uk/blog/mtd-quarterly-submissions-guide/</loc><lastmod>2026-07-07</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://acctsolution.co.uk/blog/mtd-compatible-software-brighton/</loc><lastmod>2026-07-07</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
-  <url><loc>https://acctsolution.co.uk/blog/vat-amazon-shopify-selling/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/stock-inventory-accounting-online-sellers/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/import-vat-customs-duty-online-sellers/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/refunds-returns-accounting-online-sellers/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/vat-oss-ioss-eu-sales/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/digital-products-vat-uk/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/ecommerce-expenses-beyond-stock/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/multi-channel-bookkeeping-ecommerce/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://acctsolution.co.uk/blog/sole-trader-limited-company-ecommerce/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/vat-amazon-shopify-selling/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/stock-inventory-accounting-online-sellers/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/import-vat-customs-duty-online-sellers/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/refunds-returns-accounting-online-sellers/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/vat-oss-ioss-eu-sales/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/digital-products-vat-uk/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/ecommerce-expenses-beyond-stock/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/multi-channel-bookkeeping-ecommerce/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://acctsolution.co.uk/blog/sole-trader-limited-company-ecommerce/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
