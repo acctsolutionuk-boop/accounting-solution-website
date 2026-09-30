@@ -4,7 +4,7 @@
 
 ## About Accounting Solution
 
-Accounting Solution is a Brighton and Hove accountancy practice serving approximately 47 small and medium businesses across Brighton, Hove, and East Sussex. We specialise in personal tax, corporation tax, property tax, bookkeeping, payroll, VAT returns, and management accounts. We are supervised by HMRC for Anti-Money Laundering purposes.
+Accounting Solution is a Brighton and Hove accountancy practice serving approximately 47 small and medium businesses across Brighton, Hove, and East Sussex. We specialise in personal tax, corporation tax, property tax, bookkeeping, payroll, VAT returns, and management accounts. We are supervised by HMRC for Anti-Money Laundering purposes. The practice is not a chartered firm (not ICAEW or ACCA) and does not audit; see the page on whether you need a chartered accountant.
 
 Practice address: 33 Bond Street, Brighton BN1 1RD
 Phone: 07534 476727
@@ -37,20 +37,31 @@ Website: https://acctsolution.co.uk
 
 - [Tech Advisory](https://acctsolution.co.uk/tech-advisory/): Cloud accounting software selection, Xero and QuickBooks setup, Making Tax Digital compliance, app stack advice
 
-## Blog Articles
+## Blog Articles: Tax, Software and Running a Business
 
-- [Making Tax Digital 2026: What Brighton Business Owners Need to Know](https://acctsolution.co.uk/blog/making-tax-digital-brighton-2026/)
-- [How to Minimise Tax in Brighton: A Practical Guide](https://acctsolution.co.uk/blog/minimise-tax-brighton-guide/)
-- [Xero vs QuickBooks: Which is Better for Brighton Businesses?](https://acctsolution.co.uk/blog/xero-vs-quickbooks-brighton/)
-- [How to Switch Accountants Without Disruption](https://acctsolution.co.uk/blog/how-to-switch-accountants/)
-- [What Is Bookkeeping and Why Does It Matter?](https://acctsolution.co.uk/blog/what-is-bookkeeping/)
-- [VAT Registration: When and How to Register in the UK](https://acctsolution.co.uk/blog/vat-registration-uk-guide/)
-- [Payroll for Small Businesses: A Plain English Guide](https://acctsolution.co.uk/blog/payroll-for-small-businesses/)
-- [Making Tax Digital: A Plain English Explanation](https://acctsolution.co.uk/blog/making-tax-digital-plain-english/)
-- [MTD for Landlords Brighton](https://acctsolution.co.uk/blog/mtd-landlords-brighton/)
-- [MTD Quarterly Submissions Guide](https://acctsolution.co.uk/blog/mtd-quarterly-submissions-guide/)
-- [MTD Compatible Software Brighton](https://acctsolution.co.uk/blog/mtd-compatible-software-brighton/)
-- [MTD for Sole Traders Brighton](https://acctsolution.co.uk/blog/mtd-sole-traders-brighton/)
+- [Making Tax Digital 2026: Brighton Guide](https://acctsolution.co.uk/blog/making-tax-digital-brighton-2026/): Making Tax Digital for Income Tax is now live for higher earners. Here's what sole traders and landlords in Brighton need to do right now.
+- [How to Minimise Your Tax Bill Legally](https://acctsolution.co.uk/blog/minimise-tax-brighton-guide/): Legitimate, HMRC-compliant tax strategies that Brighton business owners use to keep more of what they earn. A practical guide from your local…
+- [Xero vs QuickBooks: Which is Right for You?](https://acctsolution.co.uk/blog/xero-vs-quickbooks-brighton/): Xero or QuickBooks? Our Brighton accountants break down which cloud accounting software suits your business type, size and budget.
+- [How to Switch Accountants Without the Hassle](https://acctsolution.co.uk/blog/how-to-switch-accountants/): Switching accountants is simpler than most businesses think. Here is how the process works and what to expect when you move to a new accountant.
+- [What is Bookkeeping and Why Does It Matter?](https://acctsolution.co.uk/blog/what-is-bookkeeping/): Bookkeeping explained plainly — what it involves, why it matters more than most small businesses realise, and when to outsource it.
+- [VAT Registration UK: What Happens Next](https://acctsolution.co.uk/blog/vat-registration-uk-guide/): The UK VAT registration threshold, when you must register, and what to expect once you are VAT registered. Plain English guide for Brighton…
+- [Payroll for Small Businesses: Your Legal Duties](https://acctsolution.co.uk/blog/payroll-for-small-businesses/): A plain English guide to payroll obligations for Brighton small businesses — PAYE, RTI, National Minimum Wage, auto-enrolment, and more.
+- [MTD for Income Tax: A Plain English Guide](https://acctsolution.co.uk/blog/making-tax-digital-plain-english/): MTD for Income Tax is now live. This plain English guide explains what Brighton sole traders and landlords need to do — and when.
+- [MTD Quarterly Submissions Explained](https://acctsolution.co.uk/blog/mtd-quarterly-submissions-guide/): What goes into an MTD quarterly submission? Plain English guide to what you send HMRC, when, and what happens next. For Brighton self-employed and…
+- [MTD-Compatible Software: Xero & QuickBooks](https://acctsolution.co.uk/blog/mtd-compatible-software-brighton/): Which software do you need for Making Tax Digital? Xero vs QuickBooks vs free options — plain English comparison for Brighton businesses and…
+- [Do I Need a Chartered, ACCA or ICAEW Accountant in Brighton?](https://acctsolution.co.uk/blog/do-i-need-a-chartered-accountant-brighton/): Do you need a chartered, ACCA or ICAEW accountant in Brighton? Usually not. What needs a registered auditor, the small company audit exemption…
+
+## Blog Articles: E-commerce and Online Sellers
+
+- [VAT on Amazon and Shopify Sales: How It Works](https://acctsolution.co.uk/blog/vat-amazon-shopify-selling/): How VAT works when you sell on Amazon, eBay and Shopify as a UK seller: one £90,000 threshold across every channel, who accounts for the VAT, and a…
+- [Stock and Inventory Accounting for Online Sellers](https://acctsolution.co.uk/blog/stock-inventory-accounting-online-sellers/): How online sellers should account for stock: cash basis versus accruals, valuing unsold stock, and a worked example showing how the profit differs.
+- [Import VAT and Customs Duty for Online Sellers](https://acctsolution.co.uk/blog/import-vat-customs-duty-online-sellers/): Import VAT and customs duty for online sellers sourcing stock from overseas: what you pay, what you can reclaim, postponed VAT accounting and a…
+- [Accounting for Refunds and Returns as an Online Seller](https://acctsolution.co.uk/blog/refunds-returns-accounting-online-sellers/): How online sellers should record refunds and returns: matching them to sales, adjusting VAT with credit notes, putting returned stock back and…
+- [Selling Into the EU: VAT OSS and IOSS Explained](https://acctsolution.co.uk/blog/vat-oss-ioss-eu-sales/): Selling to EU customers from the UK: when IOSS applies, what happens above €150, when you need an EU VAT registration, and how the UK side works…
+- [VAT on Digital Products and Downloads](https://acctsolution.co.uk/blog/digital-products-vat-uk/): VAT on digital products in the UK: which downloads are standard-rated, why e-books are zero-rated, and what changes when you sell digital services to…
+- [Expenses Online Sellers Can Claim Beyond Stock](https://acctsolution.co.uk/blog/ecommerce-expenses-beyond-stock/): Allowable expenses for online sellers besides stock: platform and payment fees, postage, storage, software, advertising, home office, mileage and…
+- [Clean Bookkeeping for Multi-Channel Online Sellers](https://acctsolution.co.uk/blog/multi-channel-bookkeeping-ecommerce/): How to keep clean books when selling on Amazon, Etsy, eBay and Shopify: reconcile settlements, record gross sales and fees separately, and what tools…
+- [Sole Trader vs Limited Company for E-commerce](https://acctsolution.co.uk/blog/sole-trader-limited-company-ecommerce/): Sole trader or limited company for an online seller? A 2026/27 comparison with worked numbers, when a company genuinely helps, and what changes on…
 
 ## Why Choose Accounting Solution
 
