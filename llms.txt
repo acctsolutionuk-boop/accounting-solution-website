@@ -31,6 +31,7 @@ Website: https://acctsolution.co.uk
 - [Hospitality](https://acctsolution.co.uk/sectors/hospitality/): Restaurants, cafes, catering, tronc schemes
 - [Marketing & Design](https://acctsolution.co.uk/sectors/marketing-design/): Agencies, freelancers, creative professionals
 - [Education](https://acctsolution.co.uk/sectors/education/): Tutors, training providers, education businesses
+- [Wellness & Fitness](https://acctsolution.co.uk/sectors/wellness-fitness/): Personal trainers, physiotherapists, therapists, studios, VAT exemption and expenses
 - [Professionals](https://acctsolution.co.uk/sectors/professionals/): Consultants, coaches, freelancers, contractors
 
 ## Tech Advisory
