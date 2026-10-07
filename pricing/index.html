@@ -42,7 +42,7 @@
       {"@type":"Offer","name":"Limited company accounts (medium, £90k–£200k turnover)","priceSpecification":{"@type":"UnitPriceSpecification","price":"120","priceCurrency":"GBP","unitText":"MONTH","minPrice":"120"}},
       {"@type":"Offer","name":"Landlord / property self-assessment","priceSpecification":{"@type":"UnitPriceSpecification","price":"40","priceCurrency":"GBP","unitText":"MONTH","minPrice":"40"}},
       {"@type":"Offer","name":"Landlord / property self-assessment with MTD (income over £50,000/year)","priceSpecification":{"@type":"UnitPriceSpecification","price":"75","priceCurrency":"GBP","unitText":"MONTH","minPrice":"75"}},
-      {"@type":"Offer","name":"Self-assessment tax return (standalone)","priceSpecification":{"@type":"UnitPriceSpecification","price":"395","priceCurrency":"GBP","unitText":"YEAR","minPrice":"395"}}
+      {"@type":"Offer","name":"Self-assessment tax return (standalone)","priceSpecification":{"@type":"UnitPriceSpecification","price":"295","priceCurrency":"GBP","unitText":"YEAR","minPrice":"295"}}
     ]
   }
 }
@@ -607,7 +607,7 @@ const TYPES = {
   ltdsmall: { base: 85,  payroll: 15,   list: LTD_LIST },
   ltdmed:   { base: 120, payrollAdd: 20, vat: true, list: LTD_LIST },
   landlord: { base: 40,  mtdPrice: 75,  list: SELF_LIST },
-  sa:       { annual: 395, list: SELF_LIST }
+  sa:       { annual: 295, list: SELF_LIST }
 };
 
 const typeCards    = document.querySelectorAll('.type-card');
