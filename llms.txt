@@ -13,11 +13,12 @@ Website: https://acctsolution.co.uk
 
 ## Core Services
 
-- [Fractional CFO](https://acctsolution.co.uk/services/fractional-cfo/): Part-time finance director and outsourced financial controller for companies with £500k+ turnover and 5+ employees, from £500 a month or a day rate; hospitality, tech, construction, property development, service businesses
+- [Fractional CFO](https://acctsolution.co.uk/services/fractional-cfo/): UK-wide remotely and on site within about 75 miles of Brighton. Part-time finance director and outsourced financial controller for companies with £500k+ turnover and 5+ employees, from £500 a month or a day rate; hospitality, tech, construction, property development, service businesses
+- [Business Restructuring](https://acctsolution.co.uk/services/business-restructuring/): Turnaround and director support for distressed companies, heavy debt, HMRC arrears, preparing for administration; works alongside licensed insolvency practitioners (Accounting Solution is not an insolvency practitioner)
 - [Personal Tax](https://acctsolution.co.uk/services/personal-tax/): Self-assessment, income tax planning, sole trader returns, higher-rate tax
 - [Corporation Tax](https://acctsolution.co.uk/services/corporation-tax/): Limited company CT600 returns, tax planning, year-end accounts
 - [Property Tax](https://acctsolution.co.uk/services/property-tax/): Section 24, CGT, buy-to-let, limited company structuring for landlords
-- [Bookkeeping](https://acctsolution.co.uk/services/bookkeeping/): Monthly bookkeeping, Xero, QuickBooks, bank reconciliation
+- [Bookkeeping](https://acctsolution.co.uk/services/bookkeeping/): Monthly bookkeeping from £75/month, catch-up and clean-up of messy accounts, debtors and creditors rebuilds, accounts automation and software integrations (APIs), working accounts department in as little as a week, Xero, QuickBooks
 - [Payroll](https://acctsolution.co.uk/services/payroll/): PAYE, RTI, employee payslips, pension auto-enrolment
 - [VAT Returns](https://acctsolution.co.uk/services/vat-returns/): VAT registration, quarterly returns, Making Tax Digital for VAT
 - [Management Accounts](https://acctsolution.co.uk/services/management-accounts/): Monthly/quarterly P&L, cashflow, KPI reporting
