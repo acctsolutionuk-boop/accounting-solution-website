@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use of Home Allowance Calculator 2026/27 | Accounting Solution</title>
+<meta name="description" content="Free use of home as office calculator for UK sole traders and company directors: compare the HMRC flat rate with your actual household costs in about two minutes.">
+<meta property="og:title" content="Use of Home Allowance Calculator 2026/27 | Accounting Solution">
+<meta property="og:description" content="Free use of home as office calculator for UK sole traders and company directors: compare the HMRC flat rate with your actual household costs in about two minutes.">
+<meta property="og:image" content="https://acctsolution.co.uk/images/og-image.jpg">
+<meta property="og:url" content="https://acctsolution.co.uk/calculators/use-of-home-allowance/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://acctsolution.co.uk/calculators/use-of-home-allowance/">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.ha-scope{--ch:#212121;--cm:#2C2C2C;--or:var(--teal);--ol:var(--teal-light);--op:var(--teal-pale);--cr:#F5F0E8;--sl:#555;--tx:#1C1C1C;--wh:#fff;--gr:#1a5c2d;--grb:#25d366;--bd:rgba(33,33,33,0.14);font-family:inherit}
+.ha-scope section{padding:0}
+.ha-scope .btn{display:inline-block;text-decoration:none;background:var(--or);color:var(--ch);padding:.85rem 2rem;border-radius:3px;font-weight:600;font-size:.88rem;transition:background .2s,transform .15s;border:none;cursor:pointer;font-family:inherit;letter-spacing:.02em;}
+.ha-scope .btn:hover{background:var(--ol);transform:translateY(-2px);}
+.ha-scope .faq{max-width:700px;}
+.ha-scope .faq-item{border-bottom:1px solid var(--bd);padding:1rem 0;}
+.ha-scope .faq-q{font-weight:600;font-size:.92rem;color:var(--tx);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.ha-scope .faq-q::after{content:'+';font-size:1.2rem;color:var(--or);flex-shrink:0;transition:transform .2s;}
+.ha-scope .faq-item.open .faq-q::after{transform:rotate(45deg);}
+.ha-scope .faq-a{display:none;font-size:.86rem;color:var(--sl);line-height:1.78;padding-top:.65rem;font-weight:300;}
+.ha-scope .faq-item.open .faq-a{display:block;}
+.ha-scope .calc-hero{background:var(--ch);padding:7.5rem 5vw 3.5rem;text-align:center;}
+.ha-scope .calc-hero-inner{max-width:760px;margin:0 auto;}
+.ha-scope .calc-eyebrow{color:var(--or);font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem;}
+.ha-scope .calc-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.1rem,5vw,3.2rem);color:#fff;font-weight:700;line-height:1.1;margin-bottom:1rem;}
+.ha-scope .calc-h1 em{font-style:italic;color:var(--or);}
+.ha-scope .calc-rule{width:48px;height:2px;background:var(--or);margin:0 auto 1.2rem;}
+.ha-scope .calc-sub{color:rgba(255,255,255,.6);font-size:.98rem;line-height:1.7;font-weight:300;}
+.ha-scope .calc-section{padding:3rem 5vw 5rem;background:var(--cr);}
+.ha-scope .calc-wrap{max-width:640px;margin:0 auto;background:#fff;border-radius:10px;box-shadow:0 8px 40px rgba(0,0,0,.06);padding:2.2rem 1.6rem;border:1px solid var(--bd);}
+.ha-scope .calc-wrap{padding:2.8rem 2.6rem;}
+.ha-scope .calc-progress{margin-bottom:1.8rem;}
+.ha-scope .calc-progress-bar{height:5px;background:var(--cr);border-radius:4px;overflow:hidden;}
+.ha-scope .calc-progress-fill{height:100%;background:var(--or);width:16.66%;transition:width .35s ease;border-radius:4px;}
+.ha-scope .calc-progress-label{font-size:.72rem;color:var(--sl);margin-top:.5rem;letter-spacing:.04em;text-transform:uppercase;font-weight:600;}
+.ha-scope .calc-step{display:none;}
+.ha-scope .calc-step.active{display:block;animation:calcFade .35s ease;}
+.ha-scope .calc-step h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,1.85rem);color:var(--ch);font-weight:700;margin-bottom:.6rem;line-height:1.25;}
+.ha-scope .calc-hint{font-size:.85rem;color:var(--cm);margin-bottom:1.4rem;line-height:1.6;}
+.ha-scope .calc-note{font-size:.82rem;color:var(--sl);background:var(--op);border-radius:6px;padding:.85rem 1rem;margin-top:1.2rem;line-height:1.65;}
+.ha-scope .calc-choice-grid{display:grid;gap:.75rem;margin-bottom:.5rem;}
+.ha-scope .calc-choice-grid.two{grid-template-columns:1fr 1fr;}
+.ha-scope .calc-choice-grid.two{grid-template-columns:1fr;}
+.ha-scope .calc-choice{display:flex;align-items:center;gap:.75rem;width:100%;text-align:left;padding:1rem 1.1rem;border:1.5px solid var(--bd);border-radius:8px;background:#fff;font-family:inherit;font-size:.92rem;font-weight:500;color:var(--ch);cursor:pointer;transition:all .15s;}
+.ha-scope .calc-choice:hover{border-color:var(--or);background:var(--op);}
+.ha-scope .calc-choice.selected{border-color:var(--or);background:var(--op);box-shadow:0 0 0 1px var(--or) inset;}
+.ha-scope .calc-choice-icon{font-size:1.4rem;flex-shrink:0;}
+.ha-scope .calc-input-row{display:grid;gap:1rem;margin-top:1rem;}
+.ha-scope .calc-input-row label{display:flex;flex-direction:column;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--ch);}
+.ha-scope .calc-input-row input{font-family:inherit;font-size:.95rem;padding:.7rem .85rem;border:1.5px solid var(--bd);border-radius:6px;color:var(--ch);width:100%;}
+.ha-scope .calc-input-row input:focus{outline:none;border-color:var(--or);}
+.ha-scope .calc-cost-group{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--bd);}
+.ha-scope .calc-cost-group:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.ha-scope .calc-cost-label{display:block;font-size:.85rem;font-weight:600;color:var(--ch);margin-bottom:.45rem;}
+.ha-scope .calc-cost-row{display:flex;gap:.6rem;align-items:stretch;}
+.ha-scope .calc-cost-row .calc-cost{flex:1 1 auto;min-width:0;}
+.ha-scope .calc-period-select{flex:0 0 auto;width:auto;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--cm);border:1.5px solid var(--bd);border-radius:6px;padding:.7rem .6rem;background:#fff;cursor:pointer;}
+.ha-scope .calc-cost-row{flex-wrap:wrap;}
+.ha-scope .calc-period-select{flex:1 1 100%;}
+.ha-scope .calc-cost{font-family:inherit;font-size:.95rem;padding:.7rem .85rem;border:1.5px solid var(--bd);border-radius:6px;color:var(--ch);width:100%;}
+.ha-scope .calc-cost:focus{outline:none;border-color:var(--or);}
+.ha-scope .calc-link-btn{display:block;background:none;border:none;color:var(--or);font-family:inherit;font-size:.8rem;font-weight:600;cursor:pointer;margin-top:.6rem;padding:0;text-decoration:underline;text-align:left;}
+.ha-scope .calc-mortgage-helper{margin-top:.9rem;background:var(--cr);border-radius:6px;padding:.9rem;display:grid;gap:.8rem;}
+.ha-scope .calc-mortgage-helper label{display:flex;flex-direction:column;gap:.35rem;font-size:.8rem;font-weight:600;color:var(--ch);}
+.ha-scope .calc-mortgage-helper input{font-family:inherit;font-size:.9rem;padding:.6rem .8rem;border:1.5px solid var(--bd);border-radius:6px;max-width:160px;}
+.ha-scope .calc-est-result{font-size:.82rem;color:var(--or);font-weight:600;margin:0;}
+.ha-scope .calc-results-grid{display:grid;gap:1rem;margin-bottom:1.4rem;}
+.ha-scope .calc-results-grid{grid-template-columns:1fr 1fr;}
+.ha-scope .calc-result-card{border:1.5px solid var(--bd);border-radius:8px;padding:1.3rem 1.2rem;}
+.ha-scope .calc-result-card.highlight{border-color:var(--or);background:var(--op);}
+.ha-scope .calc-result-label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sl);margin-bottom:.8rem;}
+.ha-scope .calc-result-card.highlight .calc-result-label{color:var(--or);}
+.ha-scope .calc-result-amounts div{display:flex;justify-content:space-between;align-items:baseline;padding:.3rem 0;border-bottom:1px dashed var(--bd);}
+.ha-scope .calc-result-amounts div:last-child{border-bottom:none;}
+.ha-scope .calc-result-amounts span:first-child{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.05rem;color:var(--ch);}
+.ha-scope .calc-result-year span:first-child{font-size:1.5rem;color:var(--or);}
+.ha-scope .calc-result-amounts small{font-size:.72rem;color:var(--sl);}
+.ha-scope .calc-summary{font-size:.95rem;color:var(--ch);line-height:1.7;background:var(--cr);border-radius:6px;padding:1rem 1.1rem;margin-bottom:1rem;}
+.ha-scope .calc-summary strong{color:var(--or);}
+.ha-scope .calc-workings{font-size:.82rem;color:var(--sl);line-height:1.9;border:1.5px dashed var(--bd);border-radius:6px;padding:1rem 1.1rem;margin-bottom:1rem;}
+.ha-scope .calc-workings strong{color:var(--ch);}
+.ha-scope .calc-workings .cw-title{display:block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem;}
+.ha-scope .calc-workings .cw-row{display:flex;justify-content:space-between;gap:1rem;}
+.ha-scope .calc-disclaimer{font-size:.76rem;color:var(--sl);line-height:1.6;font-style:italic;}
+.ha-scope .calc-save-options{display:grid;gap:.85rem;}
+.ha-scope .calc-save-form{display:grid;gap:.7rem;border:1.5px solid var(--bd);border-radius:8px;padding:1.1rem;}
+.ha-scope .calc-save-form input{font-family:inherit;font-size:.9rem;padding:.7rem .85rem;border:1.5px solid var(--bd);border-radius:6px;}
+.ha-scope .calc-save-form input:focus{outline:none;border-color:var(--or);}
+.ha-scope .btn.calc-save-btn{display:block;width:100%;text-align:center;font-family:inherit;font-weight:600;font-size:.9rem;padding:.85rem 1rem;border-radius:6px;cursor:pointer;border:none;text-decoration:none;transition:all .15s;}
+.ha-scope .calc-save-form .btn.calc-save-btn{background:var(--or);color:#fff;}
+.ha-scope .calc-save-form .btn.calc-save-btn:hover{background:var(--ol);}
+.ha-scope .calc-wa-btn{background:var(--grb);color:#fff;}
+.ha-scope .calc-wa-btn:hover{background:#20c05c;}
+.ha-scope .calc-call-btn{background:var(--ch);color:#fff;}
+.ha-scope .calc-call-btn:hover{background:#4f4f4f;}
+.ha-scope .calc-thanks{margin-top:1rem;font-size:.88rem;color:var(--gr);font-weight:600;text-align:center;}
+.ha-scope .calc-nav-buttons{display:flex;justify-content:space-between;align-items:center;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--bd);}
+.ha-scope .calc-btn-back{font-family:inherit;font-size:.85rem;font-weight:600;color:var(--cm);background:none;border:none;cursor:pointer;padding:.7rem 1rem;}
+.ha-scope .calc-btn-back:disabled{opacity:0;cursor:default;}
+.ha-scope .calc-btn-next{font-family:inherit;font-size:.9rem;font-weight:600;color:#fff;background:var(--or);border:none;border-radius:6px;padding:.8rem 1.6rem;cursor:pointer;transition:background .15s;}
+.ha-scope .calc-btn-next:hover{background:var(--ol);}
+.ha-scope .calc-btn-next:disabled{background:var(--bd);cursor:not-allowed;}
+.ha-scope .calc-btn-next.calc-restart{background:var(--ch);}
+.ha-scope .calc-error{color:#c0392b;font-size:.78rem;margin-top:.5rem;display:none;}
+.ha-scope .calc-error.show{display:block;}
+.ha-scope .calc-hero{display:none}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Use of Home Allowance Calculator",
+ "url": "https://acctsolution.co.uk/calculators/use-of-home-allowance/",
+ "applicationCategory": "FinanceApplication",
+ "operatingSystem": "Any",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "GBP"
+ },
+ "description": "Free calculator comparing the HMRC flat rate with actual household costs for use of home as office, for UK sole traders and company directors.",
+ "provider": {
+  "@type": "AccountingService",
+  "@id": "https://acctsolution.co.uk/#organization",
+  "name": "Accounting Solution",
+  "url": "https://acctsolution.co.uk"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "https://acctsolution.co.uk/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Free calculators",
+   "item": "https://acctsolution.co.uk/calculators/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Use of home allowance calculator",
+   "item": "https://acctsolution.co.uk/calculators/use-of-home-allowance/"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Can I claim for working from home as a self-employed sole trader?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. You can either claim a flat rate set by HMRC based on the hours you work from home each month, with no receipts needed, or work out the proportion of your actual household bills that relates to business use and claim that instead. Use whichever gives you the fairer figure."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What are the HMRC flat rates for use of home?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "For sole traders and partners, the flat rate is £10 a month if you work from home 25 to 50 hours a month, £18 a month for 51 to 100 hours and £26 a month for 101 hours or more. Below 25 hours a month the flat rate is not available, so you would claim a share of actual costs instead."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can a limited company director claim for working from home?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. A company can pay a director £6 a week (£26 a month, £312 a year) tax-free towards household costs with no receipts needed. If your real business share of the bills is higher, the company can reimburse a larger amount, but you need records to support it."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which household costs can I include if I claim actual costs?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A fair share of heat and light, water, broadband, mobile or landline calls, home insurance, council tax and rent or mortgage interest. Which of these you can claim depends on your circumstances, and mortgage capital repayments are never claimable. Only the business proportion of each bill counts."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is it worth claiming actual costs instead of the flat rate?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Often, when your household bills are high or you use a dedicated room. The flat rate is simpler and keeps you clear of apportionment disputes. The calculator shows both figures side by side so you can see the difference before you choose."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Will claiming use of home affect capital gains tax when I sell my home?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It can. If a room is used exclusively for business, part of the gain on sale may lose main residence relief. Using a room for business alongside normal family use usually does not cause that problem. Speak to us before you claim if you plan to sell soon."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is this calculator advice, and is my data stored?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It is a free estimate for guidance only, not personal tax advice, and the figures update on screen as you go. Nothing is stored unless you choose to email yourself the results, in which case we receive your email address and the summary."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Accounting<span class="teal">Solution</span></a>
+      <div class="nav-links">
+        <a href="/services/">Services</a>
+        <a href="/services/fractional-cfo/">Fractional CFO</a>
+        <a href="/sectors/">Sectors</a>
+        <a href="/tech-advisory/">Tech Advisory</a>
+        <a href="/resources/">Resources</a>
+        <a href="/about/">About</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/contact/" class="nav-cta">Get in Touch</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="/services/">Services</a>
+  <a href="/services/fractional-cfo/">Fractional CFO</a>
+  <a href="/sectors/">Sectors</a>
+  <a href="/tech-advisory/">Tech Advisory</a>
+  <a href="/resources/">Resources</a>
+  <a href="/blog/">Blog</a>
+  <a href="/calculators/">Free Calculators</a>
+  <a href="/about/">About</a>
+  <a href="/pricing/">Pricing</a>
+  <a href="/contact/">Get in Touch</a>
+</div>
+<div class="page-hero">
+  <div class="container">
+    <span class="label">Calculator &middot; Tax relief</span>
+    <h1>Use of home allowance calculator: flat rate or actual costs</h1>
+  </div>
+</div>
+<div class="blog-article calc-page" style="padding-bottom:10px">
+  <p class="meta">By James Fitzpatrick, AAT licensed &middot; Accounting Solution &middot; Last reviewed 7 October 2026 &middot; 2026/27 tax year</p>
+  <p><strong>If you work from home you can claim a share of your household costs against your business profits. Sole traders can use an HMRC flat rate of £10, £18 or £26 a month depending on hours worked, or claim a fair share of actual bills. Company directors can be paid £6 a week tax-free. Answer six short questions and see which method gives you more.</strong></p>
+</div>
+<div class="ha-scope">
+<section class="calc-section">
+<div class="calc-wrap">
+
+<div class="calc-progress">
+<div class="calc-progress-bar"><div class="calc-progress-fill" id="progressFill"></div></div>
+<div class="calc-progress-label" id="progressLabel">Step 1 of 6</div>
+</div>
+
+<form id="calcForm" name="home-allowance-calculator" data-netlify="true" autocomplete="off">
+
+<div class="calc-step active" data-step="1">
+<h2>How do you work?</h2>
+<p class="calc-hint">This changes which HMRC rules apply to your claim.</p>
+<div class="calc-choice-grid">
+<button type="button" class="calc-choice" data-field="businessType" data-value="sole"><span class="calc-choice-icon">&#x1F464;</span><span>Sole trader, self-employed or freelancer</span></button>
+<button type="button" class="calc-choice" data-field="businessType" data-value="limited"><span class="calc-choice-icon">&#x1F3E2;</span><span>Limited company director</span></button>
+</div>
+<p class="calc-error" id="err1">Please choose one of the options above.</p>
+</div>
+
+<div class="calc-step" data-step="2">
+<h2>How many hours do you work from home?</h2>
+<p class="calc-hint">Enter whichever is easiest &mdash; the others fill in automatically.</p>
+<div class="calc-input-row">
+<label>Hours per day<input type="number" id="hoursDay" min="0" max="24" step="0.5" inputmode="decimal" placeholder="e.g. 6"></label>
+<label>Hours per week<input type="number" id="hoursWeek" min="0" max="168" step="0.5" inputmode="decimal" placeholder="e.g. 30"></label>
+<label>Hours per month<input type="number" id="hoursMonth" min="0" max="744" step="1" inputmode="decimal" placeholder="e.g. 130"></label>
+</div>
+<p class="calc-error" id="err2">Please enter your hours in at least one of the boxes above.</p>
+</div>
+
+<div class="calc-step" data-step="3">
+<h2>Tell us about your home</h2>
+<div class="calc-choice-grid two">
+<button type="button" class="calc-choice" data-field="ownership" data-value="rent"><span class="calc-choice-icon">&#x1F511;</span><span>I rent</span></button>
+<button type="button" class="calc-choice" data-field="ownership" data-value="own"><span class="calc-choice-icon">&#x1F3E0;</span><span>I own (with or without a mortgage)</span></button>
+</div>
+<div class="calc-input-row">
+<label>Bedrooms<input type="number" id="roomsBed" min="0" max="10" step="1" inputmode="numeric" placeholder="e.g. 3"></label>
+<label>Living / reception rooms<br><span style="font-weight:400;color:var(--sl);font-size:.76rem;">(lounge, dining room etc.)</span><input type="number" id="roomsLiving" min="0" max="10" step="1" inputmode="numeric" placeholder="e.g. 1"></label>
+<label>Other rooms used as living space<br><span style="font-weight:400;color:var(--sl);font-size:.76rem;">(study, playroom etc. &mdash; not kitchens, bathrooms or hallways)</span><input type="number" id="roomsOther" min="0" max="10" step="1" inputmode="numeric" placeholder="e.g. 0"></label>
+</div>
+<div class="calc-input-row">
+<label>Of all those rooms, how many are used for work?<input type="number" id="businessRooms" min="0" max="20" step="0.5" inputmode="decimal" placeholder="e.g. 1"></label>
+</div>
+<p class="calc-note">&#x1F4A1; Use 0.5 if a room is only used for work part of the time &mdash; for example a spare room used as an office some days. One more thing: claiming a room as 100% exclusive business use can affect Capital Gains Tax when you come to sell your home. If that might apply to you, it's worth talking it through with us.</p>
+<p class="calc-error" id="err3">Please choose rent or own, enter at least one room, and fill in the work-use field.</p>
+</div>
+
+<div class="calc-step" data-step="4">
+<h2>Your household costs</h2>
+<p class="calc-hint">Enter what you know &mdash; leave anything blank if you're not sure, guesses are fine too.</p>
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_rent">Rent or mortgage interest</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_rent" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_rent">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+<button type="button" class="calc-link-btn" id="mortgageHelperBtn">Don't know your mortgage interest? Estimate it &rarr;</button>
+<div class="calc-mortgage-helper" id="mortgageHelper" style="display:none;">
+<label>Outstanding mortgage balance<input type="number" id="mortgageBalance" min="0" step="100" inputmode="decimal" placeholder="&pound;"></label>
+<label>Interest rate (% per year)<input type="number" id="mortgageRate" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 4.5"></label>
+<p class="calc-est-result" id="mortgageEstResult"></p>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_counciltax">Council tax</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_counciltax" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_counciltax">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_energy">Gas &amp; electricity</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_energy" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_energy">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_water">Water</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_water" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_water">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_insurance">Home &amp; contents insurance</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_insurance" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_insurance">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_broadband">Broadband</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_broadband" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_broadband">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_mobile">Mobile / landline (business proportion)</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_mobile" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_mobile">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_cleaning">Cleaning</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_cleaning" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_cleaning">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group">
+<label class="calc-cost-label" for="cost_repairs">General repairs &amp; maintenance</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_repairs" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_repairs">
+<option value="month" selected>per month</option>
+<option value="week">per week</option>
+<option value="year">per year</option>
+</select>
+</div>
+</div>
+
+</div>
+
+<div class="calc-step" data-step="5">
+<h2>Your results</h2>
+<div class="calc-results-grid">
+<div class="calc-result-card">
+<span class="calc-result-label">Flat rate</span>
+<div class="calc-result-amounts">
+<div><span id="flatWeek">&pound;0</span><small>per week</small></div>
+<div><span id="flatMonth">&pound;0</span><small>per month</small></div>
+<div class="calc-result-year"><span id="flatYear">&pound;0</span><small>per year</small></div>
+</div>
+</div>
+<div class="calc-result-card" id="actualCard">
+<span class="calc-result-label">Actual costs</span>
+<div class="calc-result-amounts">
+<div><span id="actualWeek">&pound;0</span><small>per week</small></div>
+<div><span id="actualMonth">&pound;0</span><small>per month</small></div>
+<div class="calc-result-year"><span id="actualYear">&pound;0</span><small>per year</small></div>
+</div>
+</div>
+</div>
+<p class="calc-summary" id="calcSummary"></p>
+<div class="calc-workings" id="calcWorkings"></div>
+<p class="calc-disclaimer">This is an estimate for guidance only and isn't a substitute for advice tailored to your situation &mdash; we'd be happy to check this properly for you. Figures are based on current HMRC simplified expense rates and a straightforward apportionment of the costs you've entered.</p>
+</div>
+
+<div class="calc-step" data-step="6">
+<h2>Keep a copy of your results</h2>
+<p class="calc-hint">Get this sent to you so you can refer back to it &mdash; or skip straight to talking it through with us.</p>
+<div class="calc-save-options">
+
+<div class="calc-save-form">
+<input type="hidden" name="form-name" value="home-allowance-calculator">
+<p style="display:none"><input name="bot-field" id="botField"></p>
+<input type="hidden" id="resultsSummaryField" name="results-summary">
+<input type="hidden" id="businessTypeField" name="business-type">
+<label style="font-size:.8rem;font-weight:600;color:var(--ch);">Email address
+<input type="email" id="calcEmail" placeholder="you@example.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address, e.g. name@example.com" style="margin-top:.35rem;">
+</label>
+<label style="font-size:.8rem;font-weight:600;color:var(--ch);">Mobile number (optional &mdash; only if you'd like a WhatsApp copy too)
+<input type="tel" id="calcPhone" placeholder="07123 456789" pattern="^(\+44|0)\s?7\d{3}[\s-]?\d{3}[\s-]?\d{3}$" title="Please enter a valid UK mobile number, e.g. 07123 456789" style="margin-top:.35rem;">
+</label>
+<button type="button" class="btn calc-save-btn" id="emailMeBtn">&#x1F4E7; Email me my results</button>
+<p class="calc-error" id="err6">Please enter a valid email address.</p>
+<p class="calc-thanks" id="calcThanks">Thanks &mdash; check your inbox shortly.</p>
+</div>
+
+<a href="#" id="whatsappBtn" target="_blank" rel="noopener" class="btn calc-save-btn calc-wa-btn">&#x1F4AC; Send to WhatsApp</a>
+<a href="/contact" class="btn calc-save-btn calc-call-btn">&#x1F4DE; Book a free call to talk it through</a>
+
+</div>
+</div>
+
+<div class="calc-nav-buttons">
+<button type="button" class="calc-btn-back" id="backBtn" disabled>&larr; Back</button>
+<button type="button" class="calc-btn-next" id="nextBtn">Next &rarr;</button>
+</div>
+
+</form>
+</div>
+</section>
+
+
+
+</div>
+<div class="blog-article calc-page">
+<h2>Frequently asked questions</h2>
+<div class="faq-section" style="padding:0 20px;border-radius:8px">
+<div class="faq-item"><h3 class="faq-question">Can I claim for working from home as a self-employed sole trader?</h3><p class="faq-answer">Yes. You can either claim a flat rate set by HMRC based on the hours you work from home each month, with no receipts needed, or work out the proportion of your actual household bills that relates to business use and claim that instead. Use whichever gives you the fairer figure.</p></div>
+<div class="faq-item"><h3 class="faq-question">What are the HMRC flat rates for use of home?</h3><p class="faq-answer">For sole traders and partners, the flat rate is £10 a month if you work from home 25 to 50 hours a month, £18 a month for 51 to 100 hours and £26 a month for 101 hours or more. Below 25 hours a month the flat rate is not available, so you would claim a share of actual costs instead.</p></div>
+<div class="faq-item"><h3 class="faq-question">Can a limited company director claim for working from home?</h3><p class="faq-answer">Yes. A company can pay a director £6 a week (£26 a month, £312 a year) tax-free towards household costs with no receipts needed. If your real business share of the bills is higher, the company can reimburse a larger amount, but you need records to support it.</p></div>
+<div class="faq-item"><h3 class="faq-question">Which household costs can I include if I claim actual costs?</h3><p class="faq-answer">A fair share of heat and light, water, broadband, mobile or landline calls, home insurance, council tax and rent or mortgage interest. Which of these you can claim depends on your circumstances, and mortgage capital repayments are never claimable. Only the business proportion of each bill counts.</p></div>
+<div class="faq-item"><h3 class="faq-question">Is it worth claiming actual costs instead of the flat rate?</h3><p class="faq-answer">Often, when your household bills are high or you use a dedicated room. The flat rate is simpler and keeps you clear of apportionment disputes. The calculator shows both figures side by side so you can see the difference before you choose.</p></div>
+<div class="faq-item"><h3 class="faq-question">Will claiming use of home affect capital gains tax when I sell my home?</h3><p class="faq-answer">It can. If a room is used exclusively for business, part of the gain on sale may lose main residence relief. Using a room for business alongside normal family use usually does not cause that problem. Speak to us before you claim if you plan to sell soon.</p></div>
+<div class="faq-item"><h3 class="faq-question">Is this calculator advice, and is my data stored?</h3><p class="faq-answer">It is a free estimate for guidance only, not personal tax advice, and the figures update on screen as you go. Nothing is stored unless you choose to email yourself the results, in which case we receive your email address and the summary.</p></div>
+</div>
+<p class="small-note">This calculator gives an estimate for general guidance and is not personal tax advice. Rates are the HMRC simplified expenses rates for 2026/27. See our <a href="/calculators/">other free calculators</a> or <a href="/contact/">talk to us</a> about your own claim.</p>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Accounting<span>Solution</span></div>
+        <p>Brighton &amp; Hove accountants for small and medium businesses. Personal tax, corporation tax, bookkeeping, payroll, VAT, and more.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services/personal-tax/">Personal Tax</a>
+        <a href="/services/corporation-tax/">Corporation Tax</a>
+        <a href="/services/vat-returns/">VAT Returns</a>
+        <a href="/services/bookkeeping/">Bookkeeping</a>
+        <a href="/services/payroll/">Payroll</a>
+        <a href="/services/property-tax/">Property Tax</a>
+        <a href="/services/fractional-cfo/">Fractional CFO</a>
+        <a href="/services/business-restructuring/">Business Restructuring</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About Us</a>
+        <a href="/sectors/">Sectors</a>
+        <a href="/tech-advisory/">Tech Advisory</a>
+        <a href="/blog/">Blog</a>
+        <a href="/calculators/">Free Calculators</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:07534476727">07534 476727</a>
+        <a href="mailto:info@acctsolution.co.uk">info@acctsolution.co.uk</a>
+        <a href="https://acctsolution.co.uk">acctsolution.co.uk</a>
+        <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:8px;">Brighton &amp; Hove, East Sussex</p>
+        <p style="font-size:11px;margin-top:8px;"><a href="https://www.facebook.com/AccountingSolutionBrighton" rel="noopener" target="_blank">Facebook</a> &middot; <a href="https://www.instagram.com/acctsolutionuk/" rel="noopener" target="_blank">Instagram</a> &middot; <a href="https://x.com/accountant_hove" rel="noopener" target="_blank">X</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Accounting Solution. All rights reserved.</p>
+      <div style="display:flex;gap:20px;">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="chat-float">
+  <a href="https://wa.me/447534476727" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+<script src="/js/main.js"></script>
+
+<script>
+(function(){
+var step = 1;
+var totalSteps = 6;
+var state = {
+  businessType: null,
+  ownership: null,
+  hoursWeek: 0,
+  roomsBed: 0,
+  roomsLiving: 0,
+  roomsOther: 0,
+  totalRooms: 0,
+  businessRooms: 0,
+  costs: {}
+};
+var costIds = ['cost_rent','cost_counciltax','cost_energy','cost_water','cost_insurance','cost_broadband','cost_mobile','cost_cleaning','cost_repairs'];
+
+function fmt(n){
+  n = Math.round(n);
+  return '£' + n.toLocaleString('en-GB');
+}
+
+function showStep(n){
+  document.querySelectorAll('.calc-step').forEach(function(el){
+    el.classList.toggle('active', parseInt(el.getAttribute('data-step')) === n);
+  });
+  document.getElementById('progressFill').style.width = (n/totalSteps*100) + '%';
+  document.getElementById('progressLabel').textContent = 'Step ' + n + ' of ' + totalSteps;
+  document.getElementById('backBtn').disabled = (n === 1);
+  var nextBtn = document.getElementById('nextBtn');
+  if(n === totalSteps){
+    nextBtn.style.display = 'none';
+  } else {
+    nextBtn.style.display = '';
+    nextBtn.textContent = (n === totalSteps - 1) ? 'See my results →' : 'Next →';
+  }
+  document.querySelectorAll('.calc-error').forEach(function(e){e.classList.remove('show');});
+  window.scrollTo({top: document.getElementById('calcForm').getBoundingClientRect().top + window.scrollY - 90, behavior:'smooth'});
+}
+
+function showError(id){
+  var e = document.getElementById(id);
+  if(e) e.classList.add('show');
+}
+
+// Step 1: business type choice
+document.querySelectorAll('[data-field="businessType"]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('[data-field="businessType"]').forEach(function(b){b.classList.remove('selected');});
+    btn.classList.add('selected');
+    state.businessType = btn.getAttribute('data-value');
+  });
+});
+
+// Step 3: ownership choice
+document.querySelectorAll('[data-field="ownership"]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('[data-field="ownership"]').forEach(function(b){b.classList.remove('selected');});
+    btn.classList.add('selected');
+    state.ownership = btn.getAttribute('data-value');
+  });
+});
+
+// Step 2: hours auto-conversion
+var hDay = document.getElementById('hoursDay');
+var hWeek = document.getElementById('hoursWeek');
+var hMonth = document.getElementById('hoursMonth');
+hDay.addEventListener('input', function(){
+  var v = parseFloat(hDay.value) || 0;
+  hWeek.value = v ? (v*5).toFixed(1) : '';
+  hMonth.value = v ? Math.round(v*5*52/12) : '';
+});
+hWeek.addEventListener('input', function(){
+  var v = parseFloat(hWeek.value) || 0;
+  hDay.value = v ? (v/5).toFixed(1) : '';
+  hMonth.value = v ? Math.round(v*52/12) : '';
+});
+hMonth.addEventListener('input', function(){
+  var v = parseFloat(hMonth.value) || 0;
+  hWeek.value = v ? (v*12/52).toFixed(1) : '';
+  hDay.value = v ? (v*12/52/5).toFixed(1) : '';
+});
+
+// Step 4: mortgage helper
+document.getElementById('mortgageHelperBtn').addEventListener('click', function(){
+  var helper = document.getElementById('mortgageHelper');
+  helper.style.display = helper.style.display === 'none' ? 'block' : 'none';
+});
+function updateMortgageEstimate(){
+  var bal = parseFloat(document.getElementById('mortgageBalance').value) || 0;
+  var rate = parseFloat(document.getElementById('mortgageRate').value) || 0;
+  var result = document.getElementById('mortgageEstResult');
+  var rentPeriod = document.getElementById('period_rent').value;
+  if(bal > 0 && rate > 0){
+    var annual = bal * (rate/100);
+    var perPeriod = rentPeriod === 'week' ? annual/52 : (rentPeriod === 'year' ? annual : annual/12);
+    result.textContent = 'Estimated interest: ' + fmt(perPeriod) + ' ' + (rentPeriod === 'week' ? 'per week' : rentPeriod === 'year' ? 'per year' : 'per month') + ' (≈ ' + fmt(annual) + '/year)';
+    document.getElementById('cost_rent').value = perPeriod.toFixed(2);
+  } else {
+    result.textContent = '';
+  }
+}
+document.getElementById('mortgageBalance').addEventListener('input', updateMortgageEstimate);
+document.getElementById('mortgageRate').addEventListener('input', updateMortgageEstimate);
+document.getElementById('period_rent').addEventListener('change', updateMortgageEstimate);
+
+// Validation per step
+function validateStep(n){
+  if(n === 1){
+    if(!state.businessType){ showError('err1'); return false; }
+  }
+  if(n === 2){
+    var d = parseFloat(hDay.value)||0, w = parseFloat(hWeek.value)||0, m = parseFloat(hMonth.value)||0;
+    if(d===0 && w===0 && m===0){ showError('err2'); return false; }
+    state.hoursWeek = w || (d*5) || (m*12/52);
+  }
+  if(n === 3){
+    var rb = parseFloat(document.getElementById('roomsBed').value)||0;
+    var rl = parseFloat(document.getElementById('roomsLiving').value)||0;
+    var ro = parseFloat(document.getElementById('roomsOther').value)||0;
+    var tr = rb + rl + ro;
+    var br = document.getElementById('businessRooms').value;
+    if(!state.ownership || tr <= 0 || br === ''){ showError('err3'); return false; }
+    state.roomsBed = rb;
+    state.roomsLiving = rl;
+    state.roomsOther = ro;
+    state.totalRooms = tr;
+    state.businessRooms = parseFloat(br)||0;
+  }
+  if(n === 4){
+    costIds.forEach(function(id){
+      var v = parseFloat(document.getElementById(id).value) || 0;
+      state.costs[id] = v;
+    });
+    calculate();
+  }
+  return true;
+}
+
+function calculate(){
+  // Convert each entered cost amount to annual based on its own selected period
+  var totalAnnualCosts = 0;
+  costIds.forEach(function(id){
+    var pid = 'period_' + id.replace('cost_', '');
+    var periodEl = document.getElementById(pid);
+    var p = periodEl ? periodEl.value : 'month';
+    var multiplier = p === 'week' ? 52 : (p === 'year' ? 1 : 12);
+    totalAnnualCosts += (state.costs[id]||0) * multiplier;
+  });
+
+  // Room-based apportionment
+  var roomFraction = state.totalRooms > 0 ? (state.businessRooms / state.totalRooms) : 0;
+  var actualAnnual = totalAnnualCosts * roomFraction;
+
+  // Flat rate
+  var flatAnnual = 0;
+  var monthlyHours = state.hoursWeek * 52 / 12;
+  if(state.businessType === 'limited'){
+    flatAnnual = 312; // £6/week
+  } else {
+    if(monthlyHours >= 101) flatAnnual = 26*12;
+    else if(monthlyHours >= 51) flatAnnual = 18*12;
+    else if(monthlyHours >= 25) flatAnnual = 10*12;
+    else flatAnnual = 0;
+  }
+
+  document.getElementById('flatWeek').textContent = fmt(flatAnnual/52);
+  document.getElementById('flatMonth').textContent = fmt(flatAnnual/12);
+  document.getElementById('flatYear').textContent = fmt(flatAnnual);
+
+  document.getElementById('actualWeek').textContent = fmt(actualAnnual/52);
+  document.getElementById('actualMonth').textContent = fmt(actualAnnual/12);
+  document.getElementById('actualYear').textContent = fmt(actualAnnual);
+
+  var actualCard = document.getElementById('actualCard');
+  var summary = document.getElementById('calcSummary');
+  actualCard.classList.remove('highlight');
+
+  if(totalAnnualCosts === 0){
+    summary.innerHTML = 'You haven\'t entered any household costs, so we can only show the flat-rate figure for now. Based on what you\'ve told us, the flat rate works out at <strong>' + fmt(flatAnnual) + ' per year</strong>. Add some costs in the previous step for a fuller picture.';
+  } else if(actualAnnual > flatAnnual){
+    actualCard.classList.add('highlight');
+    var diff = actualAnnual - flatAnnual;
+    summary.innerHTML = 'Based on what you\'ve told us, claiming actual costs could give you an extra <strong>' + fmt(diff) + ' a year</strong> compared to the flat rate.';
+  } else if(flatAnnual > actualAnnual){
+    document.querySelector('.calc-result-card').classList.add('highlight');
+    var diff2 = flatAnnual - actualAnnual;
+    summary.innerHTML = 'Based on what you\'ve told us, the flat rate could give you an extra <strong>' + fmt(diff2) + ' a year</strong> compared to your actual costs &mdash; and it\'s simpler too, with no need to keep records of these bills.';
+  } else {
+    summary.innerHTML = 'Based on what you\'ve told us, both methods come out about the same.';
+  }
+
+  if(state.businessType === 'sole' && monthlyHours < 25 && monthlyHours > 0){
+    summary.innerHTML += ' Note: the flat rate only applies once you work 25+ hours a month from home &mdash; below that, the actual costs method is your only option.';
+  }
+
+  // Workings breakdown
+  var roomPct = (roomFraction*100);
+  var roomPctDisplay = (roomPct % 1 === 0) ? roomPct.toFixed(0) : roomPct.toFixed(1);
+  var flatBasis;
+  if(state.businessType === 'limited'){
+    flatBasis = 'Limited company directors can claim a flat £6/week (£26/month, £312/year) tax-free, no receipts needed.';
+  } else {
+    if(monthlyHours >= 101) flatBasis = 'You work 101+ hours/month from home, so the flat rate is £26/month (£312/year).';
+    else if(monthlyHours >= 51) flatBasis = 'You work 51-100 hours/month from home, so the flat rate is £18/month (£216/year).';
+    else if(monthlyHours >= 25) flatBasis = 'You work 25-50 hours/month from home, so the flat rate is £10/month (£120/year).';
+    else flatBasis = "You work under 25 hours/month from home, so the flat rate doesn't apply (HMRC requires 25+ hours/month for sole traders).";
+  }
+
+  var workingsHtml = '<span class="cw-title">How we worked this out</span>';
+  workingsHtml += '<div class="cw-row"><span>Flat rate</span><span></span></div>';
+  workingsHtml += '<p style="margin:.2rem 0 .8rem;">' + flatBasis + '</p>';
+  workingsHtml += '<div class="cw-row"><span>Actual costs</span><span></span></div>';
+  if(totalAnnualCosts > 0){
+    workingsHtml += '<div class="cw-row"><span>Total household costs you entered (converted to annual)</span><strong>' + fmt(totalAnnualCosts) + '</strong></div>';
+    workingsHtml += '<div class="cw-row"><span>Business use of home: ' + state.businessRooms + ' of ' + state.totalRooms + ' rooms</span><strong>' + roomPctDisplay + '%</strong></div>';
+    workingsHtml += '<div class="cw-row"><span>Estimated claim: ' + fmt(totalAnnualCosts) + ' &times; ' + roomPctDisplay + '%</span><strong>' + fmt(actualAnnual) + '/year</strong></div>';
+  } else {
+    workingsHtml += '<p style="margin:.2rem 0 0;">No household costs entered yet, so this is £0. Your business-use proportion would be ' + state.businessRooms + ' of ' + state.totalRooms + ' rooms = ' + roomPctDisplay + '% of whatever costs you enter.</p>';
+  }
+  document.getElementById('calcWorkings').innerHTML = workingsHtml;
+
+  // Build results summary text for email/WhatsApp
+  var lines = [
+    'Use of Home Allowance Calculator results',
+    '',
+    'Flat rate: ' + fmt(flatAnnual/52) + '/week, ' + fmt(flatAnnual/12) + '/month, ' + fmt(flatAnnual) + '/year',
+    'Actual costs: ' + fmt(actualAnnual/52) + '/week, ' + fmt(actualAnnual/12) + '/month, ' + fmt(actualAnnual) + '/year',
+    '',
+    'This is an estimate for guidance only — get in touch with Accounting Solution for advice tailored to you.'
+  ];
+  var summaryText = lines.join('\n');
+  document.getElementById('resultsSummaryField').value = summaryText;
+  document.getElementById('businessTypeField').value = state.businessType;
+
+  var waText = encodeURIComponent(summaryText + '\n\nSent from acctsolution.co.uk');
+  document.getElementById('whatsappBtn').setAttribute('href', 'https://wa.me/447534476727?text=' + waText);
+}
+
+// Navigation
+document.getElementById('nextBtn').addEventListener('click', function(){
+  if(!validateStep(step)) return;
+  if(step < totalSteps){
+    step++;
+    showStep(step);
+  }
+});
+document.getElementById('backBtn').addEventListener('click', function(){
+  if(step > 1){
+    step--;
+    showStep(step);
+  }
+});
+
+// Step 6: email submission (Netlify form, AJAX so we can show inline thanks)
+document.getElementById('emailMeBtn').addEventListener('click', function(){
+  var email = document.getElementById('calcEmail');
+  if(!email.checkValidity()){
+    showError('err6');
+    email.reportValidity();
+    return;
+  }
+  var formData = new FormData();
+  formData.append('form-name', 'home-allowance-calculator');
+  formData.append('email', email.value);
+  formData.append('phone', document.getElementById('calcPhone').value);
+  formData.append('results-summary', document.getElementById('resultsSummaryField').value);
+  formData.append('business-type', document.getElementById('businessTypeField').value);
+  formData.append('bot-field', document.getElementById('botField').value);
+
+  fetch('/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    body: new URLSearchParams(formData).toString()
+  }).then(function(){
+    document.getElementById('calcThanks').style.display = 'block';
+    document.getElementById('emailMeBtn').textContent = 'Sent ✓';
+    document.getElementById('emailMeBtn').disabled = true;
+  }).catch(function(){
+    document.getElementById('calcThanks').textContent = 'Something went wrong — please try again, or call us on 07534 476727.';
+    document.getElementById('calcThanks').style.color = '#c0392b';
+    document.getElementById('calcThanks').style.display = 'block';
+  });
+});
+
+showStep(1);
+})();
+
+</script>
+</body>
+</html>

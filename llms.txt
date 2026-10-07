@@ -45,6 +45,8 @@ Website: https://acctsolution.co.uk
 - [Free tax calculators (index)](https://acctsolution.co.uk/calculators/): index of our free 2026/27 tax calculators for business owners and landlords
 - [Limited company vs sole trader calculator](https://acctsolution.co.uk/calculators/limited-company-vs-sole-trader/): free 2026/27 calculator comparing tax and National Insurance as a sole trader or limited company, with worked examples and the non-tax benefits of a company. On 2026/27 rates a sole trader keeps slightly more when all profit is taken out; a company can win when profit is left in it.
 - [Landlord tax calculator](https://acctsolution.co.uk/calculators/landlord-tax/): free calculator for individual landlords covering rental income, allowable expenses, mortgage interest tax reduction (20%, rising to 22%), the £1,000 property allowance and the April 2027 property income rate rise to 22%, 42% and 47%.
+- [Use of home allowance calculator](https://acctsolution.co.uk/calculators/use-of-home-allowance/): free calculator comparing the HMRC flat rate with actual household costs for sole traders and company directors
+- [Resources hub](https://acctsolution.co.uk/resources/): all guides, free calculators and case studies in one place
 
 ## Blog Articles: Tax, Software and Running a Business
 
