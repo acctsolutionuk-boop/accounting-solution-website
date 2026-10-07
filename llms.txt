@@ -4,7 +4,7 @@
 
 ## About Accounting Solution
 
-Accounting Solution is a Brighton and Hove accountancy practice serving approximately 47 small and medium businesses across Brighton, Hove, and East Sussex. We specialise in personal tax, corporation tax, property tax, bookkeeping, payroll, VAT returns, and management accounts. We are supervised by HMRC for Anti-Money Laundering purposes. The practice is not a chartered firm (not ICAEW or ACCA) and does not audit; see the page on whether you need a chartered accountant.
+Accounting Solution is a Brighton and Hove accountancy practice serving approximately 47 small and medium businesses across Brighton, Hove, and East Sussex. We offer a fractional CFO service (outsourced finance department from two days a month, from £500 a month) and specialise in personal tax, corporation tax, property tax, bookkeeping, payroll, VAT returns, and management accounts. We are supervised by HMRC for Anti-Money Laundering purposes. The practice is not a chartered firm (not ICAEW or ACCA) and does not audit; see the page on whether you need a chartered accountant.
 
 Practice address: 33 Bond Street, Brighton BN1 1RD
 Phone: 07534 476727
@@ -13,6 +13,7 @@ Website: https://acctsolution.co.uk
 
 ## Core Services
 
+- [Fractional CFO](https://acctsolution.co.uk/services/fractional-cfo/): Part-time finance director and outsourced financial controller for companies with £500k+ turnover and 5+ employees, from £500 a month or a day rate; hospitality, tech, construction, property development, service businesses
 - [Personal Tax](https://acctsolution.co.uk/services/personal-tax/): Self-assessment, income tax planning, sole trader returns, higher-rate tax
 - [Corporation Tax](https://acctsolution.co.uk/services/corporation-tax/): Limited company CT600 returns, tax planning, year-end accounts
 - [Property Tax](https://acctsolution.co.uk/services/property-tax/): Section 24, CGT, buy-to-let, limited company structuring for landlords
