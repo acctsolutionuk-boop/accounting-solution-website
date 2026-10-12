@@ -921,16 +921,47 @@ function calculate(){
   w += '<p style="margin:1rem 0 0;"><strong>About the time split.</strong> ' + (setAside ? basisNote + ' ' : '') + 'Heating, lighting and cleaning use your actual work hours against the household\'s hours in the same space (examples 4 and 6). HMRC says its examples are a guide and each case turns on its facts, so keep a note of your hours and how you reached the shares. We will review it with you before you file.</p>';
   document.getElementById('calcWorkings').innerHTML = w;
 
-  var l1 = state.businessType === 'limited' ? 'Company payment' : 'Flat rate route';
-  var l2 = state.businessType === 'limited' ? 'Evidenced additional costs' : 'Actual costs route';
+  // Full report for email / WhatsApp: every input, the results and the complete workings
+  var ptxt = function(id){
+    var v = state.costs['cost_' + id] || 0;
+    var el = document.getElementById('period_' + id);
+    var p = el ? el.value : 'month';
+    return v > 0 ? (p === 'year' ? fmt(v) + ' a year' : fmt(v) + ' per ' + p + ' (' + fmt(ann('cost_' + id)) + ' a year)') : 'none';
+  };
+  var wtmp = document.createElement('div');
+  wtmp.innerHTML = w.replace(/<span class="cw-title">[^<]*<\/span>/, '').replace(/<\/span><span><\/span><\/div>/g, '</span></div>').replace(/<\/span><strong>/g, ': ').replace(/<\/(div|p)>/g, '\n').replace(/<br\s*\/?>/g, '\n');
+  var workingsText = wtmp.textContent.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+  var isLtd = state.businessType === 'limited';
+  var l1 = isLtd ? 'Company payment' : 'Flat rate route';
+  var l2 = isLtd ? 'Evidenced additional costs' : 'Actual costs route';
   var lines = [
-    'Use of Home Allowance Calculator results',
+    'USE OF HOME ALLOWANCE: FULL CALCULATION',
     '',
-    l1 + ': ' + fmt(flatAnnual/52) + '/week, ' + fmt(flatAnnual/12) + '/month, ' + fmt(flatAnnual) + '/year',
-    l2 + ': ' + fmt(actualAnnual/52) + '/week, ' + fmt(actualAnnual/12) + '/month, ' + fmt(actualAnnual) + '/year',
+    'RESULTS',
+    l1 + ': ' + fmt(flatAnnual/52) + ' a week, ' + fmt(flatAnnual/12) + ' a month, ' + fmt(flatAnnual) + ' a year',
+    l2 + ': ' + fmt(actualAnnual/52) + ' a week, ' + fmt(actualAnnual/12) + ' a month, ' + fmt(actualAnnual) + ' a year',
     '',
-    'This is an estimate for guidance only — speak to Accounting Solution for advice that fits your circumstances.'
+    'WHAT YOU TOLD US',
+    'Business type: ' + (isLtd ? 'Limited company director' : 'Sole trader / partner'),
+    'Hours worked at home: ' + wk.toFixed(1).replace('.0','') + ' a week (about ' + monthlyHours.toFixed(0) + ' a month)',
+    'Home: ' + (isOwner ? 'owned (mortgage)' : 'rented') + ', rooms: ' + state.roomsBed + ' bedroom(s), ' + state.roomsLiving + ' living room(s), ' + state.roomsOther + ' other (' + state.totalRooms + ' in total)',
+    'Rooms used for work: ' + state.businessRooms,
+    'Space set aside solely for work: ' + (setAside ? 'yes' : 'no'),
+    'Household hours in the work space each week: ' + fam,
+    'Hours a week the room is kept for work and off-limits to the household: ' + (state.dedicatedHours > 0 ? state.dedicatedHours : 'not given'),
+    '',
+    'COSTS ENTERED',
+    (isOwner ? 'Mortgage interest' : 'Rent') + ': ' + ptxt('rent'),
+    'Council tax: ' + ptxt('counciltax'),
+    'Gas and electricity: ' + ptxt('energy'),
+    'Home and contents insurance: ' + ptxt('insurance'),
+    'Cleaning of the work room: ' + ptxt('cleaning'),
+    'General repairs and maintenance: ' + ptxt('repairs')
   ];
+  if(!isLtd) lines.push('Repairs or redecoration to the work room only: ' + ptxt('roomrepairs'));
+  lines.push('Broadband: ' + ptxt('broadband') + ', ' + state.pctBroadband + '% business use' + (isLtd ? (document.getElementById('newBroadband').value === 'yes' ? ', taken on for homeworking' : ', already had before homeworking') : ''));
+  lines.push('Mobile / landline: ' + ptxt('mobile') + ', ' + state.pctMobile + '% business use');
+  lines.push('', 'THE CALCULATION', workingsText, '', 'This is an estimate for guidance only — speak to Accounting Solution for advice that fits your circumstances.');
   var summaryText = lines.join('\n');
   document.getElementById('resultsSummaryField').value = summaryText;
   document.getElementById('businessTypeField').value = state.businessType;
