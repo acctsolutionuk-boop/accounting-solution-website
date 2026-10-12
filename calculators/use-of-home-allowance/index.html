@@ -326,6 +326,7 @@
 </div>
 <div class="calc-input-row">
 <label>Hours a week the household also uses that space<input type="number" id="familyHours" min="0" max="168" step="0.5" inputmode="decimal" placeholder="0 if never"></label>
+<label>Hours a week the room is kept for work and off-limits to the household <span style="font-weight:400;color:var(--sl);font-size:.76rem;">(optional, e.g. 9 to 5 on weekdays is 40)</span><input type="number" id="dedicatedHours" min="0" max="168" step="0.5" inputmode="decimal" placeholder="leave blank if unsure"></label>
 </div>
 <p class="calc-note">&#x1F4A1; Enter 0.5 for a room that is half office, half something else. The big fixed bills (rent or mortgage interest, council tax, insurance, repairs) only come into a claim if you have a room or area kept for work and nothing else while you are working in it. Work at the dining table and those bills drop out, though heating and lighting can still be claimed in part. One warning for homeowners: making a room strictly business-only can cost you part of your Capital Gains Tax main-residence relief when you sell, so ask us before you do.</p>
 <p class="calc-error" id="err3">Please say whether you rent or own, enter your rooms, say how many are used for work, and tell us whether that space is kept for work.</p>
@@ -427,13 +428,35 @@
 </div>
 
 <div class="calc-cost-group">
-<label class="calc-cost-label" for="cost_repairs">General repairs &amp; maintenance</label>
+<label class="calc-cost-label" for="cost_repairs">General repairs &amp; maintenance (whole house: roof, exterior painting and so on)</label>
 <div class="calc-cost-row">
 <input type="number" class="calc-cost" id="cost_repairs" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
 <select class="calc-period-select" id="period_repairs">
 <option value="month" selected>per month</option>
 <option value="week">per week</option>
 <option value="year">per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group" id="grpRoomRepairs">
+<label class="calc-cost-label" for="cost_roomrepairs">Repairs or redecoration to the work room only</label>
+<div class="calc-cost-row">
+<input type="number" class="calc-cost" id="cost_roomrepairs" min="0" step="0.01" inputmode="decimal" placeholder="&pound;">
+<select class="calc-period-select" id="period_roomrepairs">
+<option value="month">per month</option>
+<option value="week">per week</option>
+<option value="year" selected>per year</option>
+</select>
+</div>
+</div>
+
+<div class="calc-cost-group" id="grpNewBroadband" style="display:none;">
+<label class="calc-cost-label" for="newBroadband">Did you take out your broadband only so you could work from home?</label>
+<div class="calc-cost-row">
+<select class="calc-period-select" id="newBroadband">
+<option value="no" selected>No, I already had it</option>
+<option value="yes">Yes, it is new because of homeworking</option>
 </select>
 </div>
 </div>
@@ -586,11 +609,12 @@ var state = {
   businessRooms: 0,
   setAside: null,
   familyHours: 0,
+  dedicatedHours: 0,
   pctBroadband: 0,
   pctMobile: 0,
   costs: {}
 };
-var costIds = ['cost_rent','cost_counciltax','cost_energy','cost_insurance','cost_broadband','cost_mobile','cost_cleaning','cost_repairs'];
+var costIds = ['cost_rent','cost_counciltax','cost_energy','cost_insurance','cost_broadband','cost_mobile','cost_cleaning','cost_repairs','cost_roomrepairs'];
 
 function fmt(n){
   n = Math.round(n);
@@ -694,6 +718,8 @@ document.getElementById('period_rent').addEventListener('change', updateMortgage
 function validateStep(n){
   if(n === 1){
     if(!state.businessType){ showError('err1'); return false; }
+    document.getElementById('grpNewBroadband').style.display = state.businessType === 'limited' ? '' : 'none';
+    document.getElementById('grpRoomRepairs').style.display = state.businessType === 'limited' ? 'none' : '';
   }
   if(n === 2){
     var d = parseFloat(hDay.value)||0, w = parseFloat(hWeek.value)||0, m = parseFloat(hMonth.value)||0;
@@ -713,6 +739,7 @@ function validateStep(n){
     state.totalRooms = tr;
     state.businessRooms = parseFloat(br)||0;
     state.familyHours = Math.max(0, parseFloat(document.getElementById('familyHours').value)||0);
+    state.dedicatedHours = Math.max(0, parseFloat(document.getElementById('dedicatedHours').value)||0);
   }
   if(n === 4){
     costIds.forEach(function(id){
@@ -736,10 +763,11 @@ function calculate(){
   var rent = ann('cost_rent'), ctax = ann('cost_counciltax'), energy = ann('cost_energy'),
       ins = ann('cost_insurance'), clean = ann('cost_cleaning'), rep = ann('cost_repairs'),
       bbTotal = ann('cost_broadband'), mobTotal = ann('cost_mobile');
+  var roomRep = ann('cost_roomrepairs');
   var bb = bbTotal * state.pctBroadband / 100;
   var mob = mobTotal * state.pctMobile / 100;
   var comms = bb + mob;
-  var anyCosts = (rent+ctax+energy+ins+clean+rep+bbTotal+mobTotal) > 0;
+  var anyCosts = (rent+ctax+energy+ins+clean+rep+roomRep+bbTotal+mobTotal) > 0;
 
   var isOwner = state.ownership === 'own';
   var setAside = state.setAside === 'yes';
@@ -748,14 +776,33 @@ function calculate(){
 
   // Area share: rooms used for work / all rooms
   var roomFrac = state.totalRooms > 0 ? Math.min(1, state.businessRooms / state.totalRooms) : 0;
-  // Time share: set-aside space = work hours / (work + household hours of use);
-  // shared space = work hours over a 112-hour waking week (16h x 7), a reasonable estimate for minor use
-  var timeShare = setAside ? (wk / (wk + state.familyHours)) : Math.min(1, wk / 112);
-  var areaTime = roomFrac * timeShare;
+  // Time shares, following HMRC's own examples (BIM47825).
+  // Running costs (heat, light, cleaning): work use / (work use + household use of the same space) [examples 4 and 6].
+  // Shared space with nothing set aside: work hours over a 112-hour waking week, an estimate for minor use.
+  var fam = state.familyHours;
+  var runTime = setAside ? (fam > 0 ? wk / (wk + fam) : 1) : Math.min(1, wk / 112);
+  // Fixed costs (rent or mortgage interest, council tax, insurance, repairs) need space set aside solely for work for a period.
+  //  - household never uses the space: whole time [example 2]
+  //  - room kept for work for set hours and off-limits to the household: set hours / (set hours + household hours) [example 6]
+  //  - otherwise: work hours over the whole week [example 4]
+  var ded = Math.max(state.dedicatedHours, wk);
+  var fixedTime = 0, fixedBasis = '';
+  if(setAside){
+    if(fam === 0){ fixedTime = 1; fixedBasis = 'excl'; }
+    else if(state.dedicatedHours > 0){ fixedTime = ded / (ded + fam); fixedBasis = 'ded'; }
+    else { fixedTime = Math.min(1, wk / 168); fixedBasis = 'wk'; }
+  }
+  var areaRun = roomFrac * runTime;
+  var areaFixed = roomFrac * fixedTime;
+  var areaTime = areaRun;
 
-  var fixedActual = setAside ? (rent + ctax + ins + rep) * areaTime : 0;
-  var runningActual = energy * areaTime + (setAside ? clean * areaTime : 0);
-  var fixedFlat = setAside ? ((isOwner ? rent : 0) + ctax + ins) * areaTime : 0;
+  var rentShare = rent * areaFixed;
+  var CASH_CAP = 500;
+  var interestUncapped = 0, interestCapped = false;
+  if(setAside && isOwner && rentShare > CASH_CAP){ interestUncapped = rentShare - CASH_CAP; rentShare = CASH_CAP; interestCapped = true; }
+  var fixedActual = setAside ? (rentShare + (ctax + ins + rep) * areaFixed + roomRep) : 0;
+  var runningActual = energy * areaRun + (setAside ? clean * areaRun : 0);
+  var fixedFlat = fixedActual;
 
   var flatAnnual, actualAnnual, flatRateOnly = 0, flatBasis = '';
   var lbl = document.querySelectorAll('.calc-result-label');
@@ -763,7 +810,9 @@ function calculate(){
   if(state.businessType === 'limited'){
     flatRateOnly = 312;
     flatAnnual = flatRateOnly;
-    actualAnnual = energy * areaTime + comms;
+    var newBB = document.getElementById('newBroadband').value === 'yes';
+    comms = mob + (newBB ? bb : 0);
+    actualAnnual = energy * areaRun + comms;
     lbl[0].textContent = 'Company payment (no evidence needed)';
     lbl[1].textContent = 'Evidenced additional costs';
     flatBasis = 'Your company can pay you £6 a week (£312 a year) with no tax to pay and no bills to keep, as long as you regularly work from home under an arrangement with the company.';
@@ -833,18 +882,24 @@ function calculate(){
   w += '<p style="margin:.2rem 0 .8rem;">' + flatBasis + '</p>';
   w += '<div class="cw-row"><span>Share of the home used for work</span><span></span></div>';
   w += '<div class="cw-row"><span>Area: ' + state.businessRooms + ' of ' + state.totalRooms + ' rooms</span><strong>' + pctDisp(roomFrac) + '%</strong></div>';
-  w += '<div class="cw-row"><span>Time: ' + (setAside ? wk.toFixed(1).replace('.0','') + ' work hours against ' + state.familyHours + ' household hours a week in that space' : wk.toFixed(1).replace('.0','') + ' work hours over a 112-hour waking week') + '</span><strong>' + pctDisp(timeShare) + '%</strong></div>';
-  w += '<div class="cw-row"><span>Combined business share</span><strong>' + pctDisp(areaTime) + '%</strong></div>';
+  var runTxt = setAside ? (fam > 0 ? wk.toFixed(1).replace('.0','') + ' work hours against ' + fam + ' household hours a week in that space' : 'no household use of that space') : wk.toFixed(1).replace('.0','') + ' work hours over a 112-hour waking week';
+  w += '<div class="cw-row"><span>Time, running costs: ' + runTxt + '</span><strong>' + pctDisp(runTime) + '%</strong></div>';
+  if(setAside){
+    var fixTxt = fixedBasis === 'excl' ? 'room used only for work' : (fixedBasis === 'ded' ? ded.toFixed(1).replace('.0','') + ' hours a week kept for work against ' + fam + ' household hours' : wk.toFixed(1).replace('.0','') + ' work hours out of a 168-hour week');
+    w += '<div class="cw-row"><span>Time, fixed costs: ' + fixTxt + '</span><strong>' + pctDisp(fixedTime) + '%</strong></div>';
+  }
+  w += '<div class="cw-row"><span>Combined business share' + (setAside ? ': running costs / fixed costs' : '') + '</span><strong>' + pctDisp(areaRun) + '%' + (setAside ? ' / ' + pctDisp(areaFixed) + '%' : '') + '</strong></div>';
   if(anyCosts){
     w += '<p style="margin:.8rem 0 .2rem;"><strong>' + (state.businessType === 'limited' ? 'Evidenced additional costs' : 'Actual costs route') + '</strong></p>';
     if(state.businessType === 'limited'){
-      w += '<div class="cw-row"><span>Heating and lighting of the work area: ' + fmt(energy) + ' &times; ' + pctDisp(areaTime) + '%</span><strong>' + fmt(energy*areaTime) + '</strong></div>';
+      w += '<div class="cw-row"><span>Heating and lighting of the work area: ' + fmt(energy) + ' &times; ' + pctDisp(areaRun) + '%</span><strong>' + fmt(energy*areaRun) + '</strong></div>';
     } else {
       if(setAside){
-        w += '<div class="cw-row"><span>Fixed costs (' + (isOwner ? 'mortgage interest' : 'rent') + ', council tax, insurance, repairs): ' + fmt(rent+ctax+ins+rep) + ' &times; ' + pctDisp(areaTime) + '%</span><strong>' + fmt(fixedActual) + '</strong></div>';
-        w += '<div class="cw-row"><span>Running costs (heating, lighting, cleaning): ' + fmt(energy+clean) + ' &times; ' + pctDisp(areaTime) + '%</span><strong>' + fmt(runningActual) + '</strong></div>';
+        w += '<div class="cw-row"><span>Fixed costs (' + (isOwner ? 'mortgage interest' : 'rent') + ', council tax, insurance, general repairs): ' + fmt(rent+ctax+ins+rep) + ' &times; ' + pctDisp(areaFixed) + '%' + (interestCapped ? ' (mortgage interest limited to &pound;500)' : '') + '</span><strong>' + fmt(fixedActual - roomRep) + '</strong></div>';
+        if(roomRep > 0) w += '<div class="cw-row"><span>Repairs and redecoration of the work room only (allowed in full)</span><strong>' + fmt(roomRep) + '</strong></div>';
+        w += '<div class="cw-row"><span>Running costs (heating, lighting, cleaning): ' + fmt(energy+clean) + ' &times; ' + pctDisp(areaRun) + '%</span><strong>' + fmt(runningActual) + '</strong></div>';
       } else {
-        w += '<div class="cw-row"><span>Heating and lighting: ' + fmt(energy) + ' &times; ' + pctDisp(areaTime) + '%</span><strong>' + fmt(runningActual) + '</strong></div>';
+        w += '<div class="cw-row"><span>Heating and lighting: ' + fmt(energy) + ' &times; ' + pctDisp(areaRun) + '%</span><strong>' + fmt(runningActual) + '</strong></div>';
         w += '<div class="cw-row"><span>Fixed costs: not claimable without a space set aside for work</span><strong>' + fmt(0) + '</strong></div>';
       }
     }
@@ -852,17 +907,18 @@ function calculate(){
     if(state.businessType !== 'limited' && flatRateOnly > 0){
       w += '<p style="margin:.8rem 0 .2rem;"><strong>Flat rate route</strong></p>';
       w += '<div class="cw-row"><span>Flat rate</span><strong>' + fmt(flatRateOnly) + '</strong></div>';
-      w += '<div class="cw-row"><span>Council tax, insurance' + (isOwner ? ', mortgage interest' : '') + ' on the same business share (the flat rate covers running costs only)</span><strong>' + fmt(fixedFlat) + '</strong></div>';
+      w += '<div class="cw-row"><span>Fixed costs on the same business share (the flat rate covers running costs only, BIM75010)</span><strong>' + fmt(fixedFlat) + '</strong></div>';
       w += '<div class="cw-row"><span>Broadband and phone</span><strong>' + fmt(comms) + '</strong></div>';
     }
     if(isOwner && state.businessType !== 'limited'){
-      w += '<p style="margin:.8rem 0 0;">Only the interest part of a mortgage payment counts, never the capital. On the cash basis the cap on interest and finance costs is £500 a year in total.</p>';
+      w += '<p style="margin:.8rem 0 0;">Only the interest part of a mortgage payment counts, never the capital. On the cash basis, which is the default, interest and finance costs are capped at &pound;500 a year in total (BIM70040).' + (interestCapped ? ' Your mortgage interest share was cut by ' + fmt(interestUncapped) + ' for that reason. Electing to use the accruals basis instead removes the cap, so speak to us.' : '') + '</p>';
     }
     if(state.businessType === 'limited'){
       w += '<p style="margin:.8rem 0 0;">Your company cannot pay mortgage interest, rent, council tax or water rates tax-free, because they are not extra costs caused by working at home.</p>';
     }
   }
-  w += '<p style="margin:1rem 0 0;"><strong>About the time split.</strong> HMRC gives no formula for dividing costs by time and its own worked examples do it in different ways. We have used the one that is most favourable to you: your work hours compared with the hours the rest of the household uses the same space. That is a fair basis, but HMRC could take a different view. Write down your hours and how you got to the business share, and we will review it with you before you file.</p>';
+  var basisNote = fixedBasis === 'excl' ? 'Because the household never uses the space, the fixed costs are split by area only, as in HMRC\'s example 2 (BIM47825).' : (fixedBasis === 'ded' ? 'Fixed costs use the hours the room is kept for work against the household\'s hours, as in HMRC\'s example 6 (BIM47825). You need to be able to show the room really is off-limits to the household in those hours, for example a closed door and work equipment in it.' : 'Fixed costs use your work hours out of the whole week, as in HMRC\'s example 4 (BIM47825). If the room is kept for work at set times and the household stays out, tell us the hours and the share goes up.');
+  w += '<p style="margin:1rem 0 0;"><strong>About the time split.</strong> ' + (setAside ? basisNote + ' ' : '') + 'Heating, lighting and cleaning use your actual work hours against the household\'s hours in the same space (examples 4 and 6). HMRC says its examples are a guide and each case turns on its facts, so keep a note of your hours and how you reached the shares. We will review it with you before you file.</p>';
   document.getElementById('calcWorkings').innerHTML = w;
 
   var l1 = state.businessType === 'limited' ? 'Company payment' : 'Flat rate route';
