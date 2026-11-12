@@ -87,6 +87,33 @@
     t.parentNode.insertBefore(a, t.nextSibling);
   }
 
+  /* Enquiry tracking. Sends events only after the visitor has accepted analytics cookies. */
+  function ev(name, params) {
+    if (get() !== 'granted' || typeof window.gtag !== 'function') return;
+    params = params || {};
+    params.transport_type = 'beacon';
+    window.gtag('event', name, params);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+    var p = { link_url: h.split('?')[0], page_path: location.pathname };
+    if (h.indexOf('tel:') === 0) ev('phone_click', p);
+    else if (h.indexOf('mailto:') === 0) ev('email_click', p);
+    else if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp.com') > -1) ev('whatsapp_click', p);
+    else if (h.indexOf('calendar.google.com') > -1 && h.indexOf('appointments') > -1) ev('booking_click', p);
+  }, true);
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f || f.tagName !== 'FORM') return;
+    var n = f.getAttribute('name') || f.id || 'form';
+    var p = { form_name: n, page_path: location.pathname };
+    if (n === 'contact' || n === 'tax-investigation-contact') ev('generate_lead', p);
+    else if (n === 'newsletter') ev('newsletter_signup', p);
+    else if (n === 'home-allowance-calculator') ev('calculator_use', p);
+  }, true);
+
   function init() {
     var c = get();
     if (c === 'granted') loadGA();
